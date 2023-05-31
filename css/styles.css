@@ -76,6 +76,19 @@
   }
 }
 
+@media only screen and (max-width: 1026px) {
+  #header-video {
+      display: none;
+  }
+}
+
+@media only screen and (min-width: 1026px) {
+  header {
+      display: none;
+  }
+}
+
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
