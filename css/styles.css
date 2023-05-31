@@ -76,15 +76,21 @@
   }
 }
 
-@media only screen and (max-width: 1026px) {
+@media (max-width: 1024px) {
   #header-video {
       display: none;
   }
+  header {
+      display: flex;
+  }
 }
 
-@media only screen and (min-width: 1026px) {
+@media (min-width: 1024px) {
   header {
       display: none;
+  }
+  #header-video {
+      display: flex;
   }
 }
 
