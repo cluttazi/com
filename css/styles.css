@@ -11421,53 +11421,6 @@ header.masthead {
   background-position: center center;
   background-size: cover;
 }
-header.masthead.container.video-wrapper {
-  /* Telling our absolute positioned video to 
-  be relative to this element */
-  position: relative;
-
-  width: 400px;
-  height: 200px;
-
-  /* Will not allow the video to overflow the 
-  container */
-  overflow: hidden;
-
-  /* Centering the container's content vertically 
-  and horizontally */
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#gk-header {
-  background: transparent!important;
-  overflow: hidden;
-}
-
-#gk-bg {
-  background: transparent;
-}
-
-#bg-video {
-  background: url("../assets/img/map-image.png") no-repeat;
-  background-size: cover;
-  position: absolute;
-  width: 100%; 
-  max-height: 720px;
-  height: auto;
-  z-index: -1;
-  overflow: hidden;
-  padding-top: 10.5rem;
-  padding-bottom: 6rem;
-  text-align: center;
-  color: #fff;
-  background-image: url("../assets/img/header-bg.jpg");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  background-size: cover;
-}
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
   font-style: italic;
