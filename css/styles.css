@@ -76,7 +76,7 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   #header-video {
       display: none;
   }
@@ -85,12 +85,15 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   header {
       display: none;
   }
   #header-video {
       display: flex;
+      padding-right: 0%;
+
+      padding-left: 0%;
   }
 }
 
@@ -1404,7 +1407,7 @@ progress {
 
   .col-lg-4 {
     flex: 0 0 auto;
-    width: 33.33333333%;
+    /* width: 33.33333333%; */
   }
 
   .col-lg-5 {
