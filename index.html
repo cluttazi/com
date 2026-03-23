@@ -1,497 +1,963 @@
 <!DOCTYPE html>
+
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Chris Luttazi - Data Engineer</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7362455468707733" crossorigin="anonymous"></script> -->
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-            <div class="container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars ms-1"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/chrisluttazi/">Linkedin Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Masthead-->
-        <video class="video-wrapper container-fluid" id="header-video" playsinline autoplay muted loop poster="assets/img/header-bg.jpg" >
-            <source src="assets/mov/datacenter.mp4" type="video/mp4">
-        </video>
-        <header class="masthead">
-            
-            <div class="container">
-                <div class="masthead-subheading">Python / Scala</div>
-                <div class="masthead-heading text-uppercase">Databricks Development Services</div>
-                <a class="btn btn-primary btn-xl text-uppercase" href="https://www.linkedin.com/in/chrisluttazi/">LinkedIn Contact</a>
-            </div>
-        </header>
-        <!-- About-->
-        <section class="page-section" id="about">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">About</h2>
-                    <h3 class="section-subheading text-muted"></h3>
-                </div>
-                <ul class="timeline">
-                    <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>January 2016</h4>
-                                <h4 class="subheading">MS in Information Systems @ Northeastern University - USA</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted"></p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>March 2016</h4>
-                                <h4 class="subheading">Data Engineer @ Schneider Electric - Denmark</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted"></p></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>September 2018</h4>
-                                <h4 class="subheading">Senior Data Engineer @ Nets Group - Norway</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted"></p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>June 2021</h4>
-                                <h4 class="subheading">Lead Data Engineer @ Freelance - Spain</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted"></p></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/5.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>February 2024</h4>
-                                <h4 class="subheading">Data Engineering Services - Japan</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted"></p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image">
-                            <h4>
-                                Be Part
-                                <br />
-                                Of Our
-                                <br />
-                                Story!
-                            </h4>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <!-- Team-->
-        <section class="page-section bg-light" id="team">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-                    <h3 class="section-subheading text-muted"></h3>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
-                            <h4>Chris Luttazi</h4>
-                            <p class="text-muted">Lead Data Engineer</p>
-                            <!-- <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a> -->
-                            <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/chrisluttazi" aria-label="Chris Luttazi LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted"></p></div>
-                </div>
-            </div>
-        </section>
-        <!-- Clients-->
-        <div class="py-5">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Our Clients</h2>
-                    <h3 class="section-subheading text-muted"></h3>
-                </div>
-                <div class="row align-items-center">
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="https://www.randstad.co.jp/"><img class="img-fluid-full d-block mx-auto" src="assets/img/logos/randstad.png" alt="..." aria-label="Randstad Japan" />
-                            <!-- Randstad -->
-                        </a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="https://www.nnespana.es/"><img class="img-fluid-full d-block mx-auto" src="assets/img/logos/nn.jpg" alt="..." aria-label="Nationale Nederlanden" />
-                            <!-- NN -->
-                        </a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="https://www.cognizant.com/us/en"><img class="img-fluid-full d-block mx-auto" src="assets/img/logos/cognizant.jpg" alt="..." aria-label="Cognizant" />
-                            <!-- Cognizant -->
-                        </a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="https://adevinta.es/"><img class="img-fluid-full d-block mx-auto" src="assets/img/logos/adevinta.jpg" alt="..." aria-label="Adevinta" />
-                            <!-- Adevinta -->
-                        </a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="https://www.nets.eu/"><img class="img-fluid-full d-block mx-auto" src="assets/img/logos/nets.jpg" alt="..." aria-label="Nets Group" />
-                            <!-- Nets Group -->
-                        </a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="https://www.farfetch.com/"><img class="img-fluid-full d-block mx-auto" src="assets/img/logos/farfetch.jpg" alt="..." aria-label="Farfetch" />
-                            <!-- Farfetch -->
-                        </a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="https://www.se.com/"><img class="img-fluid-full d-block mx-auto" src="assets/img/logos/se.jpg" alt="..." aria-label="Schneider Electric" />
-                            <!-- Schneider Electric -->
-                        </a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="https://www.pmi.com/"><img class="img-fluid-full d-block mx-auto" src="assets/img/logos/pmi.jpg" alt="..." aria-label="Phillip Morris International" />
-                            <!-- Phillip Morris International -->
-                        </a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid-full d-block mx-auto" src="assets/img/logos/huddle.jpg" alt="..." aria-label="Huddle Group" />
-                            <!-- Huddle Group -->
-                        </a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="https://corporate.exxonmobil.com/"><img class="img-fluid-full d-block mx-auto" src="assets/img/logos/exxonmobil.jpg" alt="..." aria-label="ExxonMobil" />
-                            <!-- ExxonMobil -->
-                        </a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="https://www.accenture.com"><img class="img-fluid-full d-block mx-auto" src="assets/img/logos/accenture.jpg" alt="..." aria-label="Accenture" />
-                            <!-- Accenture -->
-                        </a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid-full d-block mx-auto" src="assets/img/logos/iceberg.jpg" alt="..." aria-label="Iceberg Solutions" />
-                            <!-- Iceberg Solutions -->
-                        </a>
-                    </div>
-                </div>
-            </div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Chris Luttazi — Lead Data Engineer. Databricks, Apache Spark, Python, Scala." />
+  <meta name="author" content="Chris Luttazi" />
+  <title>Chris Luttazi — Data Engineer</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --bg2: #f5f7f8;
+      --surface: #ffffff;
+      --border: #dde3e7;
+      --navy: #1B3139;
+      --navy-light: #243d47;
+      --red: #EE3D2C;
+      --red-dark: #c72d1d;
+      --text: #1B3139;
+      --muted: #5a7282;
+      --muted-light: #8aa0ad;
+      --font-display: 'Syne', sans-serif;
+      --font-mono: 'DM Mono', monospace;
+    }
+
+```
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-mono);
+  font-size: 15px;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* ── NAV ── */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2.5rem;
+  height: 64px;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  transition: background .3s, box-shadow .3s;
+}
+nav.scrolled { box-shadow: 0 2px 20px rgba(27,49,57,0.08); }
+.nav-logo {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.1rem;
+  letter-spacing: -0.02em;
+  color: var(--navy);
+  text-decoration: none;
+}
+.nav-logo span { color: var(--red); }
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+.nav-links a {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color .2s;
+}
+.nav-links a:hover { color: var(--red); }
+.nav-cta {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #fff;
+  background: var(--red);
+  border: 1px solid var(--red);
+  padding: 0.45rem 1.1rem;
+  text-decoration: none;
+  transition: background .2s, border-color .2s;
+}
+.nav-cta:hover { background: var(--red-dark); border-color: var(--red-dark); }
+
+/* ── HERO ── */
+#hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: var(--navy);
+}
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  opacity: 0.12;
+  filter: saturate(0);
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(27,49,57,0.85) 0%, rgba(27,49,57,0.5) 100%);
+}
+.hero-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2.5rem;
+  padding-top: 64px;
+}
+.hero-tag {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #fff;
+  background: var(--red);
+  padding: 0.3rem 0.8rem;
+  margin-bottom: 2rem;
+  animation: fadeUp 0.8s ease both;
+}
+.hero-h1 {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 8vw, 7rem);
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  animation: fadeUp 0.9s ease 0.1s both;
+}
+.hero-h1 em {
+  font-style: normal;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255,255,255,0.4);
+}
+.hero-sub {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  color: rgba(255,255,255,0.65);
+  max-width: 480px;
+  margin-bottom: 2.5rem;
+  animation: fadeUp 1s ease 0.2s both;
+}
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+  animation: fadeUp 1s ease 0.3s both;
+}
+.btn-primary {
+  background: var(--red);
+  color: #fff;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  padding: 0.85rem 2rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background .2s, transform .2s;
+}
+.btn-primary:hover { background: var(--red-dark); transform: translateY(-2px); }
+.hero-stack {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  animation: fadeUp 1s ease 0.4s both;
+}
+.stack-tag {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(255,255,255,0.55);
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.12);
+  padding: 0.3rem 0.7rem;
+}
+.hero-scroll {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: rgba(255,255,255,0.35);
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  animation: fadeIn 1.5s ease 1s both;
+}
+.scroll-line {
+  width: 1px;
+  height: 48px;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.35), transparent);
+  animation: scrollPulse 2s ease infinite;
+}
+
+/* ── SECTIONS ── */
+section { padding: 7rem 0; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 2.5rem; }
+.section-label {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--red);
+  margin-bottom: 0.6rem;
+  font-family: var(--font-mono);
+}
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  color: var(--navy);
+  margin-bottom: 1rem;
+}
+.section-line {
+  width: 48px;
+  height: 3px;
+  background: var(--red);
+  margin-bottom: 3.5rem;
+}
+
+/* ── ABOUT / TIMELINE ── */
+#about { background: var(--bg2); }
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 5rem;
+  align-items: start;
+}
+.about-intro {
+  font-size: 1.05rem;
+  color: var(--muted);
+  line-height: 1.8;
+}
+.about-intro strong { color: var(--navy); }
+.timeline { list-style: none; }
+.tl-item {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+.tl-item::before {
+  content: '';
+  position: absolute;
+  left: 39px;
+  top: 28px;
+  bottom: -2.5rem;
+  width: 1px;
+  background: var(--border);
+}
+.tl-item:last-child::before { display: none; }
+.tl-year {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--red);
+  padding-top: 0.2rem;
+  text-align: right;
+  line-height: 1.4;
+}
+.tl-dot {
+  position: absolute;
+  left: 35px;
+  top: 6px;
+  width: 9px; height: 9px;
+  border-radius: 50%;
+  background: var(--red);
+  box-shadow: 0 0 0 3px rgba(238,61,44,0.15);
+}
+.tl-body {
+  padding-left: 1rem;
+}
+.tl-role {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 0.2rem;
+}
+.tl-company { font-size: 0.8rem; color: var(--muted); }
+
+/* ── CLIENTS ── */
+#clients { background: var(--bg); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 5rem 0; }
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1.5rem 2rem;
+  align-items: center;
+  margin-top: 3rem;
+}
+.client-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  background: var(--bg2);
+  transition: border-color .2s, transform .2s, box-shadow .2s;
+  aspect-ratio: 2.2/1;
+}
+.client-logo:hover { border-color: var(--red); transform: translateY(-3px); box-shadow: 0 6px 20px rgba(238,61,44,0.1); }
+.client-logo img {
+  max-width: 100%;
+  max-height: 36px;
+  object-fit: contain;
+  filter: grayscale(1) opacity(0.5);
+  transition: filter .2s, opacity .2s;
+}
+.client-logo:hover img { filter: grayscale(0) opacity(1); }
+
+/* ── TEAM ── */
+#team { background: var(--navy); }
+#team .section-label { color: rgba(238,61,44,0.9); }
+#team .section-title { color: #fff; }
+.team-card {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 3rem;
+  max-width: 640px;
+}
+.team-avatar {
+  width: 120px; height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--red);
+  flex-shrink: 0;
+}
+.team-name {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #fff;
+  margin-bottom: 0.3rem;
+}
+.team-role { font-size: 0.8rem; color: var(--red); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1rem; }
+.team-bio { font-size: 0.85rem; color: rgba(255,255,255,0.55); margin-bottom: 1.2rem; }
+.team-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px; height: 36px;
+  border: 1px solid rgba(255,255,255,0.15);
+  color: rgba(255,255,255,0.5);
+  text-decoration: none;
+  transition: border-color .2s, color .2s, background .2s;
+}
+.team-social a:hover { border-color: var(--red); color: #fff; background: var(--red); }
+
+/* ── PORTFOLIO ── */
+#portfolio { background: var(--bg2); }
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5px;
+}
+.pf-item {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  cursor: pointer;
+  background: var(--navy);
+}
+.pf-item img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform .5s ease, opacity .3s;
+  opacity: 0.75;
+}
+.pf-item:hover img { transform: scale(1.05); opacity: 0.25; }
+.pf-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.5rem;
+  background: linear-gradient(to top, rgba(27,49,57,0.92) 0%, transparent 60%);
+}
+.pf-title {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.2rem;
+}
+.pf-sub { font-size: 0.72rem; color: var(--red); text-transform: uppercase; letter-spacing: 0.1em; }
+.pf-hover-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  opacity: 0;
+  transition: opacity .3s, transform .3s;
+  font-size: 1.5rem;
+  color: #fff;
+}
+.pf-item:hover .pf-hover-icon { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+.pf-github {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  opacity: 0;
+  transition: opacity .3s .05s, transform .3s .05s;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid rgba(255,255,255,0.3);
+  padding: 0.5rem 1rem;
+  background: rgba(27,49,57,0.8);
+}
+.pf-item:hover .pf-github { opacity: 1; transform: translate(-50%, -50%) translateY(2rem); }
+
+/* ── FOOTER ── */
+footer {
+  background: var(--navy);
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding: 2.5rem 0;
+}
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.footer-copy { font-size: 0.72rem; color: rgba(255,255,255,0.4); }
+.footer-links { display: flex; gap: 1.5rem; }
+.footer-links a { font-size: 0.72rem; color: rgba(255,255,255,0.4); text-decoration: none; transition: color .2s; }
+.footer-links a:hover { color: var(--red); }
+
+/* ── MODAL ── */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(27,49,57,0.85);
+  z-index: 200;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  backdrop-filter: blur(4px);
+}
+.modal-backdrop.open { display: flex; }
+.modal-box {
+  background: #fff;
+  border: 1px solid var(--border);
+  max-width: 640px;
+  width: 100%;
+  padding: 3rem;
+  position: relative;
+  animation: fadeUp .3s ease;
+  box-shadow: 0 20px 60px rgba(27,49,57,0.2);
+}
+.modal-close {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+  background: none;
+  border: none;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: color .2s;
+}
+.modal-close:hover { color: var(--red); }
+.modal-box img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+}
+.modal-box h2 {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 0.5rem;
+}
+.modal-box p { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+.modal-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #fff;
+  background: var(--red);
+  text-decoration: none;
+  padding: 0.65rem 1.2rem;
+  transition: background .2s;
+}
+.modal-link:hover { background: var(--red-dark); }
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes scrollPulse {
+  0%, 100% { transform: scaleY(1); opacity: 0.5; }
+  50% { transform: scaleY(1.2); opacity: 1; }
+}
+
+/* ── MOBILE ── */
+@media (max-width: 768px) {
+  nav { padding: 0 1.5rem; }
+  .nav-links { display: none; }
+  .hero-content { padding: 0 1.5rem; padding-top: 80px; }
+  .about-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .clients-grid { grid-template-columns: repeat(3, 1fr); }
+  .portfolio-grid { grid-template-columns: repeat(2, 1fr); }
+  .team-card { flex-direction: column; text-align: center; }
+  .container { padding: 0 1.5rem; }
+}
+@media (max-width: 480px) {
+  .portfolio-grid { grid-template-columns: 1fr; }
+  .clients-grid { grid-template-columns: repeat(2, 1fr); }
+}
+```
+
+  </style>
+</head>
+<body id="page-top">
+
+<!-- NAV -->
+
+<nav>
+  <a href="#page-top" class="nav-logo">luttazi<span>.</span>com</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#clients">Clients</a></li>
+    <li><a href="#team">Team</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+  </ul>
+  <a href="https://www.linkedin.com/in/chrisluttazi/" class="nav-cta" target="_blank" rel="noopener">
+    <i class="fab fa-linkedin-in"></i>&nbsp; Connect
+  </a>
+</nav>
+
+<!-- HERO -->
+
+<section id="hero">
+  <video class="hero-video" playsinline autoplay muted loop poster="assets/img/header-bg.jpg">
+    <source src="assets/mov/datacenter.mp4" type="video/mp4" />
+  </video>
+  <div class="hero-overlay"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-tag">Python &nbsp;/&nbsp; Scala &nbsp;/&nbsp; Databricks</div>
+    <h1 class="hero-h1">
+      Databricks<br/>
+      <em>Development</em><br/>
+      Services
+    </h1>
+    <p class="hero-sub">
+      End-to-end data engineering — from raw ingestion to production-grade pipelines.
+      10+ years across Europe, Japan &amp; beyond.
+    </p>
+    <div class="hero-actions">
+      <a href="https://www.linkedin.com/in/chrisluttazi/" class="btn-primary" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i> LinkedIn Contact
+      </a>
+    </div>
+    <div class="hero-stack">
+      <span class="stack-tag">Apache Spark</span>
+      <span class="stack-tag">Databricks</span>
+      <span class="stack-tag">Delta Lake</span>
+      <span class="stack-tag">Scala</span>
+      <span class="stack-tag">Python</span>
+      <span class="stack-tag">AKKA</span>
+      <span class="stack-tag">ETL / ELT</span>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+  <div class="container">
+    <div class="section-label">01 — About</div>
+    <h2 class="section-title">Career Timeline</h2>
+    <div class="section-line"></div>
+    <div class="about-grid">
+      <div>
+        <p class="about-intro">
+          <strong>Chris Luttazi</strong> is a Lead Data Engineer specialising in large-scale data platforms built on Databricks, Apache Spark, and the modern data lake ecosystem.<br/><br/>
+          With experience spanning fintech, energy, e-commerce, and enterprise consulting, Chris has delivered data solutions across four continents — from Scandinavia to Japan.
+        </p>
+      </div>
+      <ul class="timeline">
+        <li class="tl-item">
+          <div class="tl-year">Jan<br/>2016</div>
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <div class="tl-role">MS in Information Systems</div>
+            <div class="tl-company">Northeastern University — USA</div>
+          </div>
+        </li>
+        <li class="tl-item">
+          <div class="tl-year">Mar<br/>2016</div>
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <div class="tl-role">Data Engineer</div>
+            <div class="tl-company">Schneider Electric — Denmark</div>
+          </div>
+        </li>
+        <li class="tl-item">
+          <div class="tl-year">Sep<br/>2018</div>
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <div class="tl-role">Senior Data Engineer</div>
+            <div class="tl-company">Nets Group — Norway</div>
+          </div>
+        </li>
+        <li class="tl-item">
+          <div class="tl-year">Jun<br/>2021</div>
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <div class="tl-role">Lead Data Engineer</div>
+            <div class="tl-company">Freelance — Spain</div>
+          </div>
+        </li>
+        <li class="tl-item">
+          <div class="tl-year">Feb<br/>2024</div>
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <div class="tl-role">Data Engineering Services</div>
+            <div class="tl-company">Japan</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- CLIENTS -->
+
+<section id="clients">
+  <div class="container">
+    <div class="section-label">02 — Clients</div>
+    <h2 class="section-title">Trusted By</h2>
+    <div class="section-line"></div>
+    <div class="clients-grid">
+      <a href="https://www.randstad.co.jp/" class="client-logo" target="_blank" rel="noopener" aria-label="Randstad Japan">
+        <img src="assets/img/logos/randstad.png" alt="Randstad" />
+      </a>
+      <a href="https://www.nnespana.es/" class="client-logo" target="_blank" rel="noopener" aria-label="Nationale Nederlanden">
+        <img src="assets/img/logos/nn.jpg" alt="Nationale Nederlanden" />
+      </a>
+      <a href="https://www.cognizant.com/us/en" class="client-logo" target="_blank" rel="noopener" aria-label="Cognizant">
+        <img src="assets/img/logos/cognizant.jpg" alt="Cognizant" />
+      </a>
+      <a href="https://adevinta.es/" class="client-logo" target="_blank" rel="noopener" aria-label="Adevinta">
+        <img src="assets/img/logos/adevinta.jpg" alt="Adevinta" />
+      </a>
+      <a href="https://www.nets.eu/" class="client-logo" target="_blank" rel="noopener" aria-label="Nets Group">
+        <img src="assets/img/logos/nets.jpg" alt="Nets Group" />
+      </a>
+      <a href="https://www.farfetch.com/" class="client-logo" target="_blank" rel="noopener" aria-label="Farfetch">
+        <img src="assets/img/logos/farfetch.jpg" alt="Farfetch" />
+      </a>
+      <a href="https://www.se.com/" class="client-logo" target="_blank" rel="noopener" aria-label="Schneider Electric">
+        <img src="assets/img/logos/se.jpg" alt="Schneider Electric" />
+      </a>
+      <a href="https://www.pmi.com/" class="client-logo" target="_blank" rel="noopener" aria-label="Philip Morris International">
+        <img src="assets/img/logos/pmi.jpg" alt="Philip Morris International" />
+      </a>
+      <a href="#" class="client-logo" aria-label="Huddle Group">
+        <img src="assets/img/logos/huddle.jpg" alt="Huddle Group" />
+      </a>
+      <a href="https://corporate.exxonmobil.com/" class="client-logo" target="_blank" rel="noopener" aria-label="ExxonMobil">
+        <img src="assets/img/logos/exxonmobil.jpg" alt="ExxonMobil" />
+      </a>
+      <a href="https://www.accenture.com" class="client-logo" target="_blank" rel="noopener" aria-label="Accenture">
+        <img src="assets/img/logos/accenture.jpg" alt="Accenture" />
+      </a>
+      <a href="#" class="client-logo" aria-label="Iceberg Solutions">
+        <img src="assets/img/logos/iceberg.jpg" alt="Iceberg Solutions" />
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+
+<section id="team">
+  <div class="container">
+    <div class="section-label">03 — Team</div>
+    <h2 class="section-title">The Team</h2>
+    <div class="section-line"></div>
+    <div class="team-card">
+      <img class="team-avatar" src="assets/img/team/1.jpg" alt="Chris Luttazi" />
+      <div>
+        <div class="team-name">Chris Luttazi</div>
+        <div class="team-role">Lead Data Engineer</div>
+        <p class="team-bio">
+          Specialist in Databricks platform engineering, large-scale Spark pipelines, and data architecture across global enterprise environments.
+        </p>
+        <div class="team-social">
+          <a href="https://www.linkedin.com/in/chrisluttazi" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
         </div>
-        <!-- Portfolio Grid-->
-        <section class="page-section bg-light" id="portfolio">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Portfolio</h2>
-                    <h3 class="section-subheading text-muted"></h3>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 1-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/1.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Apache Spark</div>
-                                <div class="portfolio-caption-subheading text-muted">ETL</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 2-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/2.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Apache Spark</div>
-                                <div class="portfolio-caption-subheading text-muted">Scala Spring</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 3-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/2.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">AKKA</div>
-                                <div class="portfolio-caption-subheading text-muted">Hasher</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                        <!-- Portfolio item 4-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/1.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Apache Spark</div>
-                                <div class="portfolio-caption-subheading text-muted">SKUs</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-                        <!-- Portfolio item 5-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/2.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Scala</div>
-                                <div class="portfolio-caption-subheading text-muted">UporDown</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <!-- Portfolio item 6-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/1.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Apache Spark</div>
-                                <div class="portfolio-caption-subheading text-muted">SolarIrradiance</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Footer-->
-        <footer class="footer py-4">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-4 text-lg-start">Copyright &copy; luttazi.com 2026</div>
-                    <div class="col-lg-4 text-lg-end">
-                        <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
-                        <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- Portfolio Modals-->
-        <!-- Portfolio item 1 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Spark ETL</h2>
-                                    <p class="item-intro text-muted"></p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.jpg" alt="..." />
-                                    <p></p>
-                                    <a class="link-dark text-decoration-none me-3" href="https://github.com/cluttazi/spark-etl">Click here to see the Github!</a>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio item 2 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Scala Spring</h2>
-                                    <p class="item-intro text-muted"></p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpg" alt="..." />
-                                    <p></p>
-                                    <a class="link-dark text-decoration-none me-3" href="https://github.com/cluttazi/scala-spring">Click here to see the Github!</a>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio item 3 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Hasher</h2>
-                                    <p class="item-intro text-muted"></p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpg" alt="..." />
-                                    <p></p>
-                                    <a class="link-dark text-decoration-none me-3" href="https://github.com/cluttazi/hasher">Click here to see the Github!</a>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio item 4 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">SKUs</h2>
-                                    <p class="item-intro text-muted"></p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.jpg" alt="..." />
-                                    <p></p>
-                                    <a class="link-dark text-decoration-none me-3" href="https://github.com/cluttazi/skus">Click here to see the Github!</a>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio item 5 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Up or Down</h2>
-                                    <p class="item-intro text-muted"></p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpg" alt="..." />
-                                    <p></p>
-                                    <a class="link-dark text-decoration-none me-3" href="https://github.com/cluttazi/upordown">Click here to see the Github!</a>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio item 6 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Solar Irradiance</h2>
-                                    <p class="item-intro text-muted"></p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.jpg" alt="..." />
-                                    <p></p>
-                                    <a class="link-dark text-decoration-none me-3" href="https://github.com/cluttazi/solar-irradiance">Click here to see the Github!</a>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    </body>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+
+<section id="portfolio">
+  <div class="container">
+    <div class="section-label">04 — Portfolio</div>
+    <h2 class="section-title">Open Source Projects</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="portfolio-grid">
+    <!-- Item 1 -->
+    <div class="pf-item" onclick="openModal('modal1')">
+      <img src="assets/img/portfolio/1.jpg" alt="Spark ETL" />
+      <div class="pf-overlay">
+        <div class="pf-title">Apache Spark</div>
+        <div class="pf-sub">ETL</div>
+      </div>
+      <i class="fas fa-arrow-up-right-from-square pf-hover-icon"></i>
+    </div>
+    <!-- Item 2 -->
+    <div class="pf-item" onclick="openModal('modal2')">
+      <img src="assets/img/portfolio/2.jpg" alt="Scala Spring" />
+      <div class="pf-overlay">
+        <div class="pf-title">Apache Spark</div>
+        <div class="pf-sub">Scala Spring</div>
+      </div>
+      <i class="fas fa-arrow-up-right-from-square pf-hover-icon"></i>
+    </div>
+    <!-- Item 3 -->
+    <div class="pf-item" onclick="openModal('modal3')">
+      <img src="assets/img/portfolio/2.jpg" alt="AKKA Hasher" />
+      <div class="pf-overlay">
+        <div class="pf-title">AKKA</div>
+        <div class="pf-sub">Hasher</div>
+      </div>
+      <i class="fas fa-arrow-up-right-from-square pf-hover-icon"></i>
+    </div>
+    <!-- Item 4 -->
+    <div class="pf-item" onclick="openModal('modal4')">
+      <img src="assets/img/portfolio/1.jpg" alt="Apache Spark SKUs" />
+      <div class="pf-overlay">
+        <div class="pf-title">Apache Spark</div>
+        <div class="pf-sub">SKUs</div>
+      </div>
+      <i class="fas fa-arrow-up-right-from-square pf-hover-icon"></i>
+    </div>
+    <!-- Item 5 -->
+    <div class="pf-item" onclick="openModal('modal5')">
+      <img src="assets/img/portfolio/2.jpg" alt="Scala UporDown" />
+      <div class="pf-overlay">
+        <div class="pf-title">Scala</div>
+        <div class="pf-sub">UporDown</div>
+      </div>
+      <i class="fas fa-arrow-up-right-from-square pf-hover-icon"></i>
+    </div>
+    <!-- Item 6 -->
+    <div class="pf-item" onclick="openModal('modal6')">
+      <img src="assets/img/portfolio/1.jpg" alt="Solar Irradiance" />
+      <div class="pf-overlay">
+        <div class="pf-title">Apache Spark</div>
+        <div class="pf-sub">SolarIrradiance</div>
+      </div>
+      <i class="fas fa-arrow-up-right-from-square pf-hover-icon"></i>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <span class="footer-copy">© luttazi.com 2026 — MIT License</span>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="https://www.linkedin.com/in/chrisluttazi/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- MODALS -->
+
+<div class="modal-backdrop" id="modal1" onclick="closeOnBackdrop(event, 'modal1')">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('modal1')"><i class="fas fa-xmark"></i></button>
+    <img src="assets/img/portfolio/1.jpg" alt="Spark ETL" />
+    <h2>Spark ETL</h2>
+    <p>A production-grade Apache Spark ETL pipeline built with Python and PySpark, designed for scalable batch data processing.</p>
+    <a href="https://github.com/cluttazi/spark-etl" class="modal-link" target="_blank" rel="noopener">
+      <i class="fab fa-github"></i> View on GitHub
+    </a>
+  </div>
+</div>
+
+<div class="modal-backdrop" id="modal2" onclick="closeOnBackdrop(event, 'modal2')">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('modal2')"><i class="fas fa-xmark"></i></button>
+    <img src="assets/img/portfolio/2.jpg" alt="Scala Spring" />
+    <h2>Scala Spring</h2>
+    <p>A Scala-based Spring integration project demonstrating reactive streaming patterns over distributed datasets.</p>
+    <a href="https://github.com/cluttazi/scala-spring" class="modal-link" target="_blank" rel="noopener">
+      <i class="fab fa-github"></i> View on GitHub
+    </a>
+  </div>
+</div>
+
+<div class="modal-backdrop" id="modal3" onclick="closeOnBackdrop(event, 'modal3')">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('modal3')"><i class="fas fa-xmark"></i></button>
+    <img src="assets/img/portfolio/2.jpg" alt="AKKA Hasher" />
+    <h2>AKKA Hasher</h2>
+    <p>An AKKA actor-based hashing utility for concurrent data anonymisation across high-throughput data streams.</p>
+    <a href="https://github.com/cluttazi/hasher" class="modal-link" target="_blank" rel="noopener">
+      <i class="fab fa-github"></i> View on GitHub
+    </a>
+  </div>
+</div>
+
+<div class="modal-backdrop" id="modal4" onclick="closeOnBackdrop(event, 'modal4')">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('modal4')"><i class="fas fa-xmark"></i></button>
+    <img src="assets/img/portfolio/1.jpg" alt="SKUs" />
+    <h2>SKUs</h2>
+    <p>Apache Spark pipeline for processing and enriching large SKU catalogs for e-commerce platforms at scale.</p>
+    <a href="https://github.com/cluttazi/skus" class="modal-link" target="_blank" rel="noopener">
+      <i class="fab fa-github"></i> View on GitHub
+    </a>
+  </div>
+</div>
+
+<div class="modal-backdrop" id="modal5" onclick="closeOnBackdrop(event, 'modal5')">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('modal5')"><i class="fas fa-xmark"></i></button>
+    <img src="assets/img/portfolio/2.jpg" alt="Up or Down" />
+    <h2>Up or Down</h2>
+    <p>A Scala market prediction utility using historical trend analysis to classify asset momentum signals.</p>
+    <a href="https://github.com/cluttazi/upordown" class="modal-link" target="_blank" rel="noopener">
+      <i class="fab fa-github"></i> View on GitHub
+    </a>
+  </div>
+</div>
+
+<div class="modal-backdrop" id="modal6" onclick="closeOnBackdrop(event, 'modal6')">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('modal6')"><i class="fas fa-xmark"></i></button>
+    <img src="assets/img/portfolio/1.jpg" alt="Solar Irradiance" />
+    <h2>Solar Irradiance</h2>
+    <p>Spark-based analysis and forecasting of solar irradiance data for renewable energy performance modelling.</p>
+    <a href="https://github.com/cluttazi/solar-irradiance" class="modal-link" target="_blank" rel="noopener">
+      <i class="fab fa-github"></i> View on GitHub
+    </a>
+  </div>
+</div>
+
+<script>
+  // Nav scroll effect
+  window.addEventListener('scroll', () => {
+    document.querySelector('nav').classList.toggle('scrolled', window.scrollY > 40);
+  });
+
+  // Modals
+  function openModal(id) {
+    document.getElementById(id).classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal(id) {
+    document.getElementById(id).classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  function closeOnBackdrop(e, id) {
+    if (e.target === document.getElementById(id)) closeModal(id);
+  }
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('.modal-backdrop.open').forEach(m => {
+        m.classList.remove('open');
+        document.body.style.overflow = '';
+      });
+    }
+  });
+
+  // Scroll reveal
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.style.opacity = '1';
+        e.target.style.animation = 'fadeUp 0.7s ease both';
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.tl-item, .client-logo, .pf-item, .team-card').forEach(el => {
+    el.style.opacity = '0';
+    observer.observe(el);
+  });
+</script>
+
+</body>
 </html>
