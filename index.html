@@ -100,7 +100,7 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(27,49,57,0.08); }
 /* ── HERO ── */
 #hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 100svh;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -552,20 +552,131 @@ footer {
   50% { transform: scaleY(1.2); opacity: 1; }
 }
 
-/* ── MOBILE ── */
+/* ── TABLET ── */
 @media (max-width: 768px) {
-  nav { padding: 0 1.5rem; }
+  nav { padding: 0 1.25rem; }
   .nav-links { display: none; }
-  .hero-content { padding: 0 1.5rem; padding-top: 80px; }
-  .about-grid { grid-template-columns: 1fr; gap: 3rem; }
-  .clients-grid { grid-template-columns: repeat(3, 1fr); }
+  .container { padding: 0 1.25rem; }
+  section { padding: 4.5rem 0; }
+
+  /* Hero */
+  .hero-content {
+    padding: 0 1.25rem;
+    padding-top: 80px;
+    padding-bottom: 5rem;
+  }
+  .hero-h1 {
+    font-size: clamp(2.4rem, 11vw, 4rem);
+    letter-spacing: -0.03em;
+    word-break: normal;
+    overflow-wrap: normal;
+  }
+  .hero-sub {
+    font-size: 0.9rem;
+    max-width: 100%;
+    word-break: break-word;
+  }
+  .hero-tag {
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+  }
+  .hero-stack {
+    gap: 0.4rem;
+    margin-top: 2rem;
+  }
+  .stack-tag { font-size: 0.62rem; padding: 0.25rem 0.6rem; }
+  .btn-primary { font-size: 0.68rem; padding: 0.75rem 1.4rem; }
+
+  /* Sections */
+  .section-title { font-size: clamp(1.6rem, 7vw, 2.4rem); }
+  .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .clients-grid { grid-template-columns: repeat(3, 1fr); gap: 0.75rem; }
   .portfolio-grid { grid-template-columns: repeat(2, 1fr); }
-  .team-card { flex-direction: column; text-align: center; }
-  .container { padding: 0 1.5rem; }
+  .team-card { flex-direction: column; text-align: center; padding: 2rem; gap: 1.5rem; }
+  .team-avatar { width: 90px; height: 90px; }
+  .modal-box { padding: 1.75rem; }
 }
+
+/* ── MOBILE ── */
 @media (max-width: 480px) {
+  nav { padding: 0 1rem; height: 58px; }
+  .nav-logo { font-size: 0.95rem; }
+  .nav-cta { font-size: 0.65rem; padding: 0.4rem 0.85rem; }
+  .container { padding: 0 1rem; }
+  section { padding: 3.5rem 0; }
+
+  /* Hero — key fix: constrain font so nothing clips */
+  .hero-content {
+    padding: 0 1rem;
+    padding-top: 72px;
+    padding-bottom: 4rem;
+  }
+  .hero-h1 {
+    font-size: 2.1rem;
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+    word-break: normal;
+    overflow-wrap: normal;
+    hyphens: none;
+  }
+  .hero-sub {
+    font-size: 0.85rem;
+    line-height: 1.65;
+    max-width: 100%;
+    word-break: break-word;
+  }
+  .hero-tag {
+    font-size: 0.6rem;
+    letter-spacing: 0.1em;
+    padding: 0.25rem 0.6rem;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
+  .hero-stack {
+    gap: 0.35rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+  }
+  .stack-tag {
+    font-size: 0.6rem;
+    padding: 0.22rem 0.55rem;
+    letter-spacing: 0.07em;
+  }
+  .btn-primary {
+    font-size: 0.66rem;
+    padding: 0.7rem 1.2rem;
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Sections */
+  .section-title { font-size: clamp(1.5rem, 8vw, 2rem); }
+  .section-label { font-size: 0.62rem; }
+  .section-line { margin-bottom: 2rem; }
+
+  /* Clients */
+  .clients-grid { grid-template-columns: repeat(2, 1fr); gap: 0.6rem; }
+  .client-logo { padding: 0.75rem; }
+  .client-logo img { max-height: 28px; }
+
+  /* Portfolio */
   .portfolio-grid { grid-template-columns: 1fr; }
-  .clients-grid { grid-template-columns: repeat(2, 1fr); }
+  .pf-title { font-size: 0.95rem; }
+
+  /* Timeline */
+  .tl-item { grid-template-columns: 60px 1fr; gap: 1rem; }
+  .tl-item::before { left: 29px; }
+  .tl-dot { left: 25px; }
+  .tl-role { font-size: 0.9rem; }
+
+  /* Team */
+  .team-card { padding: 1.5rem; }
+  .team-name { font-size: 1.3rem; }
+
+  /* Modal */
+  .modal-box { padding: 1.25rem; }
+  .modal-box h2 { font-size: 1.3rem; }
 }
 ```
 
