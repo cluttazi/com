@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Chris Luttazi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0b0d;
+    --bg2: #0f1115;
+    --surface: #14161b;
+    --border: rgba(255,255,255,0.07);
+    --accent: #e8ff47;
+    --text: #e8e9ec;
+    --muted: #6b7280;
+    --mono: 'DM Mono', monospace;
+    --sans: 'DM Sans', sans-serif;
+    --display: 'Bebas Neue', sans-serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 48px;
+    border-bottom: 1px solid var(--border);
+    background: rgba(10,11,13,0.85);
+    backdrop-filter: blur(12px);
+  }
+
+  .nav-logo {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--accent);
+    letter-spacing: 0.05em;
+    text-decoration: none;
+  }
+
+  .nav-back {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .nav-back:hover { color: var(--accent); }
+
+  main {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 140px 48px 100px;
+  }
+
+  .page-label {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .page-label::before {
+    content: '';
+    display: block;
+    width: 32px;
+    height: 1px;
+    background: var(--accent);
+  }
+
+  h1 {
+    font-family: var(--display);
+    font-size: clamp(48px, 7vw, 80px);
+    line-height: 0.95;
+    margin-bottom: 12px;
+  }
+
+  .effective-date {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+    margin-bottom: 56px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .lang-toggle {
+    display: flex;
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    width: fit-content;
+    margin-bottom: 48px;
+  }
+
+  .lang-btn {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 8px 20px;
+    background: var(--bg);
+    color: var(--muted);
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .lang-btn.active {
+    background: var(--accent);
+    color: var(--bg);
+  }
+
+  .policy-body { display: none; }
+  .policy-body.active { display: block; }
+
+  h2 {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-top: 36px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 16px;
+    color: var(--muted);
+    line-height: 1.8;
+    margin-bottom: 16px;
+  }
+
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 32px 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-left {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--muted);
+  }
+
+  footer a {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  footer a:hover { color: var(--accent); }
+
+  @media (max-width: 600px) {
+    nav { padding: 16px 24px; }
+    main { padding: 120px 24px 80px; }
+    footer { flex-direction: column; gap: 16px; padding: 24px; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">CL_LUTTAZI.ENG</a>
+  <a href="index.html" class="nav-back">← Back</a>
+</nav>
+
+<main>
+  <div class="page-label">Legal</div>
+  <h1>PRIVACY<br>POLICY</h1>
+  <div class="effective-date">Effective Date: August 29th, 2023</div>
+
+  <div class="lang-toggle">
+    <button class="lang-btn active" onclick="switchLang('en')">English</button>
+    <button class="lang-btn" onclick="switchLang('es')">Español</button>
+  </div>
+
+  <div id="policy-en" class="policy-body active">
+    <p>At luttazi.com, we value your privacy and are committed to protecting your personal information. This AdSense GDPR Policy explains how we collect, use, and share your data when you visit our website and use our services, particularly in relation to AdSense campaigns.</p>
+
+    <h2>Information We Collect</h2>
+    <p>We collect certain information about your visit to our website, including your IP address, browser type, referral source, and the pages you accessed on our site. This information is used to analyze trends, administer the site, and gather demographic information for aggregate use. We may also collect information you provide directly, such as through contact forms or subscriptions.</p>
+
+    <h2>Use of Data for AdSense Campaigns</h2>
+    <p>We use Google AdSense to serve advertisements when you visit our website. AdSense may use personal data (such as cookies and browsing behavior) to personalize the ads you see. This data helps AdSense deliver more relevant advertisements to you and provides us with insights into the effectiveness of our ad campaigns.</p>
+
+    <h2>Data Sharing</h2>
+    <p>We may share non-personal, aggregated information with third-party service providers to improve our website and services. However, we do not sell, trade, or rent your personal information to others.</p>
+
+    <h2>Your Choices</h2>
+    <p>You can manage your preferences for personalized advertisements through your browser settings or Google's Ad Personalization settings. Additionally, you have the right to access, correct, or delete your personal information. If you wish to exercise these rights or have any concerns, please contact us through the DNS registrar technical address.</p>
+
+    <p>By using our website, you consent to the terms outlined in this AdSense GDPR Policy.</p>
+  </div>
+
+  <div id="policy-es" class="policy-body">
+    <p>En luttazi.com, valoramos tu privacidad y estamos comprometidos a proteger tu información personal. Esta Política de GDPR de AdSense explica cómo recopilamos, usamos y compartimos tus datos cuando visitas nuestro sitio web y utilizas nuestros servicios, en particular en relación con las campañas de AdSense.</p>
+
+    <h2>Información que Recopilamos</h2>
+    <p>Recopilamos cierta información sobre tu visita a nuestro sitio web, incluida tu dirección IP, tipo de navegador, fuente de referencia y las páginas a las que accediste en nuestro sitio. Esta información se utiliza para analizar tendencias, administrar el sitio y recopilar información demográfica para uso agregado. También podemos recopilar información que proporcionas directamente, como a través de formularios de contacto o suscripciones.</p>
+
+    <h2>Uso de Datos para Campañas de AdSense</h2>
+    <p>Utilizamos Google AdSense para mostrar anuncios cuando visitas nuestro sitio web. AdSense puede utilizar datos personales (como cookies y comportamiento de navegación) para personalizar los anuncios que ves. Estos datos ayudan a AdSense a ofrecerte anuncios más relevantes y nos brindan información sobre la eficacia de nuestras campañas publicitarias.</p>
+
+    <h2>Compartir Datos</h2>
+    <p>Podemos compartir información no personal y agregada con proveedores de servicios externos para mejorar nuestro sitio web y servicios. Sin embargo, no vendemos, intercambiamos ni alquilamos tu información personal a terceros.</p>
+
+    <h2>Tus Opciones</h2>
+    <p>Puedes gestionar tus preferencias para los anuncios personalizados a través de la configuración de tu navegador o las configuraciones de Personalización de Anuncios de Google. Además, tienes derecho a acceder, corregir o eliminar tu información personal. Si deseas ejercer estos derechos o tienes alguna inquietud, contáctanos a través de la dirección de correo registrada en el registro DNS.</p>
+
+    <p>Al utilizar nuestro sitio web, aceptas los términos descritos en esta Política de GDPR de AdSense.</p>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-left">© luttazi.com 2026</div>
+  <a href="index.html">← Back to site</a>
+</footer>
+
+<script>
+  function switchLang(lang) {
+    document.querySelectorAll('.policy-body').forEach(el => el.classList.remove('active'));
+    document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+    document.getElementById('policy-' + lang).classList.add('active');
+    event.target.classList.add('active');
+  }
+</script>
+</body>
+</html>

@@ -358,6 +358,18 @@
     position: relative;
   }
 
+  .timeline-content::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 7px;
+    width: 7px;
+    height: 7px;
+    background: var(--accent);
+    border-radius: 50%;
+    transform: translateX(-50%);
+  }
+
 
 
   .timeline-role {
@@ -595,10 +607,46 @@
     50% { opacity: 0; }
   }
 
+  /* ── HAMBURGER ───────────────────────────────── */
+  .nav-hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+  }
+
+  .nav-hamburger span {
+    display: block;
+    width: 22px;
+    height: 1px;
+    background: var(--text);
+    transition: all 0.25s;
+  }
+
   /* ── RESPONSIVE ──────────────────────────────── */
   @media (max-width: 900px) {
-    nav { padding: 16px 24px; }
-    .nav-links { display: none; }
+    nav { padding: 16px 24px; position: relative; }
+    .nav-hamburger { display: flex; }
+    .nav-links {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0; right: 0;
+      flex-direction: column;
+      gap: 0;
+      background: rgba(10,11,13,0.97);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-links.open { display: flex; }
+    .nav-links li a {
+      display: block;
+      padding: 16px 24px;
+      border-top: 1px solid var(--border);
+    }
     #hero { grid-template-columns: 1fr; min-height: auto; }
     .hero-left { padding: 100px 24px 40px; }
     .hero-right { padding: 0 24px 60px; }
@@ -629,6 +677,9 @@
     <li><a href="#portfolio">Portfolio</a></li>
   </ul>
   <a href="https://www.linkedin.com/in/chrisluttazi/" class="nav-cta" target="_blank">Connect</a>
+  <button class="nav-hamburger" aria-label="Toggle navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
 
 <!-- HERO -->
@@ -671,7 +722,7 @@
         <div class="stat-label">Years Experience</div>
       </div>
       <div class="stat">
-        <div class="stat-num">4</div>
+        <div class="stat-num">3</div>
         <div class="stat-label">Continents</div>
       </div>
       <div class="stat">
@@ -841,8 +892,7 @@
 <footer>
   <div class="footer-left">© luttazi.com 2026 — MIT License</div>
   <div class="footer-links">
-    <a href="#">Privacy Policy</a>
-    <a href="#">Terms of Use</a>
+    <a href="privacy.html">Privacy Policy</a>
     <a href="https://www.linkedin.com/in/chrisluttazi/" target="_blank">LinkedIn</a>
     <a href="https://github.com/cluttazi" target="_blank">GitHub</a>
   </div>
@@ -852,13 +902,28 @@
   // Scroll-triggered fade-in
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      }
+      if (entry.isIntersecting) entry.target.classList.add('visible');
     });
   }, { threshold: 0.1 });
 
   document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+  // Mobile nav toggle
+  const hamburger = document.querySelector('.nav-hamburger');
+  const navLinks = document.querySelector('.nav-links');
+
+  hamburger.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', isOpen);
+  });
+
+  // Close nav when a link is clicked
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+    });
+  });
 </script>
 </body>
 </html>
