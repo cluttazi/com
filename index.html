@@ -3,7 +3,42 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chris Luttazi — Data Engineer</title>
+<title>Chris Luttazi — Lead Data Engineer | Databricks · Data Vault 2.0 · Lakehouse · AI</title>
+<meta name="description" content="Lead Data Engineer specialising in Databricks, Apache Spark, Data Vault 2.0, lakehouse architecture (Delta Lake, Apache Iceberg), Snowflake, streaming with Kafka, and AI-ready data platforms — RAG pipelines, vector search and LLM data engineering. 10+ years across fintech, e-commerce, energy and enterprise. Based in Tokyo, available worldwide.">
+<link rel="canonical" href="https://luttazi.com/">
+<link rel="icon" href="assets/favicon.ico">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://luttazi.com/">
+<meta property="og:title" content="Chris Luttazi — Lead Data Engineer | Databricks · Data Vault 2.0 · Lakehouse · AI">
+<meta property="og:description" content="Lead Data Engineer specialising in Databricks, Apache Spark, Data Vault 2.0, lakehouse architecture, streaming and AI-ready data platforms. 10+ years, four continents, based in Tokyo.">
+<meta property="og:site_name" content="luttazi.com">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Chris Luttazi — Lead Data Engineer">
+<meta name="twitter:description" content="Databricks · Apache Spark · Data Vault 2.0 · Lakehouse · Streaming · AI-ready data platforms. 10+ years, based in Tokyo, available worldwide.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Chris Luttazi",
+  "jobTitle": "Lead Data Engineer",
+  "url": "https://luttazi.com/",
+  "address": { "@type": "PostalAddress", "addressLocality": "Tokyo", "addressCountry": "JP" },
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "Northeastern University" },
+  "sameAs": [
+    "https://www.linkedin.com/in/chrisluttazi/",
+    "https://github.com/cluttazi"
+  ],
+  "knowsAbout": [
+    "Data Engineering", "Databricks", "Apache Spark", "Data Vault 2.0",
+    "Lakehouse Architecture", "Delta Lake", "Apache Iceberg", "Snowflake",
+    "Apache Kafka", "Spark Structured Streaming", "Apache Airflow", "dbt",
+    "Python", "SQL", "Scala", "AWS", "Microsoft Azure", "Medallion Architecture",
+    "Change Data Capture", "Data Governance", "Unity Catalog", "Data Contracts",
+    "Retrieval-Augmented Generation", "Vector Databases", "LLM Data Pipelines",
+    "AI-Augmented Software Development"
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -85,6 +120,35 @@
 
   .nav-links a:hover { color: var(--accent); }
 
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .lang-select {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    color: var(--muted);
+    background: transparent;
+    border: 1px solid var(--border);
+    padding: 7px 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .lang-select:hover, .lang-select:focus {
+    color: var(--accent);
+    border-color: var(--accent);
+    outline: none;
+  }
+
+  .lang-select option {
+    background: var(--bg2);
+    color: var(--text);
+  }
+
   .nav-cta {
     font-family: var(--mono);
     font-size: 11px;
@@ -159,10 +223,10 @@
   .hero-title .line-accent { color: var(--accent); }
 
   .hero-desc {
-    font-size: 17px;
+    font-size: 16px;
     color: var(--muted);
     line-height: 1.7;
-    max-width: 480px;
+    max-width: 520px;
     margin-bottom: 48px;
   }
 
@@ -211,6 +275,17 @@
     z-index: 1;
   }
 
+  .stack-group-label {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 20px 0 8px;
+  }
+
+  .hero-right .stack-group-label:first-child { margin-top: 0; }
+
   .stack-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -221,7 +296,7 @@
 
   .stack-item {
     background: var(--bg);
-    padding: 20px 22px;
+    padding: 14px 18px;
     display: flex;
     align-items: center;
     gap: 12px;
@@ -240,7 +315,7 @@
 
   .stack-item span {
     font-family: var(--mono);
-    font-size: 13px;
+    font-size: 12px;
     color: var(--text);
   }
 
@@ -250,17 +325,17 @@
     gap: 1px;
     background: var(--border);
     border: 1px solid var(--border);
-    border-top: none;
+    margin-top: 20px;
   }
 
   .stat {
     background: var(--bg);
-    padding: 28px 22px;
+    padding: 24px 20px;
   }
 
   .stat-num {
     font-family: var(--display);
-    font-size: 48px;
+    font-size: 44px;
     color: var(--accent);
     line-height: 1;
     margin-bottom: 6px;
@@ -315,7 +390,7 @@
   }
 
   .about-bio {
-    font-size: 17px;
+    font-size: 16px;
     color: var(--muted);
     line-height: 1.8;
   }
@@ -384,6 +459,47 @@
     font-family: var(--mono);
     font-size: 12px;
     color: var(--muted);
+  }
+
+  /* ── EXPERTISE ──────────────────────────────── */
+  .expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+  }
+
+  .expertise-card {
+    background: var(--bg);
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    transition: background 0.25s;
+  }
+
+  .expertise-card:hover { background: var(--surface); }
+
+  .expertise-num {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    color: var(--accent);
+  }
+
+  .expertise-title {
+    font-family: var(--sans);
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--text);
+    line-height: 1.3;
+  }
+
+  .expertise-desc {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.65;
   }
 
   /* ── CLIENTS ────────────────────────────────── */
@@ -586,6 +702,13 @@
 
   .footer-links a:hover { color: var(--accent); }
 
+  /* ── RTL SUPPORT ─────────────────────────────── */
+  [dir="rtl"] .timeline::before { left: auto; right: 72px; }
+  [dir="rtl"] .timeline-date { text-align: left; padding-right: 0; padding-left: 10px; }
+  [dir="rtl"] .timeline-content { padding-left: 0; padding-right: 28px; }
+  [dir="rtl"] .timeline-content::before { left: auto; right: 0; transform: translateX(50%); }
+  [dir="rtl"] .project-card::after { transform-origin: right; }
+
   /* ── ANIMATIONS ──────────────────────────────── */
   .fade-in {
     opacity: 0;
@@ -647,11 +770,13 @@
       padding: 16px 24px;
       border-top: 1px solid var(--border);
     }
+    .nav-cta { display: none; }
     #hero { grid-template-columns: 1fr; min-height: auto; }
     .hero-left { padding: 100px 24px 40px; }
     .hero-right { padding: 0 24px 60px; }
     section { padding: 80px 24px; }
     .about-grid { grid-template-columns: 1fr; gap: 48px; }
+    .expertise-grid { grid-template-columns: 1fr 1fr; }
     .portfolio-grid { grid-template-columns: 1fr 1fr; }
     #contact .inner { flex-direction: column; }
     footer { flex-direction: column; gap: 16px; text-align: center; }
@@ -659,6 +784,7 @@
   }
 
   @media (max-width: 600px) {
+    .expertise-grid { grid-template-columns: 1fr; }
     .portfolio-grid { grid-template-columns: 1fr; }
     .stack-grid { grid-template-columns: 1fr 1fr; }
     .hero-title { font-size: 64px; }
@@ -672,14 +798,34 @@
 <nav>
   <a href="#" class="nav-logo">CL_LUTTAZI.ENG</a>
   <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#clients">Clients</a></li>
-    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#about" data-i18n="nav_about">About</a></li>
+    <li><a href="#expertise" data-i18n="nav_expertise">Expertise</a></li>
+    <li><a href="#clients" data-i18n="nav_clients">Clients</a></li>
+    <li><a href="#portfolio" data-i18n="nav_portfolio">Portfolio</a></li>
   </ul>
-  <a href="https://www.linkedin.com/in/chrisluttazi/" class="nav-cta" target="_blank">Connect</a>
-  <button class="nav-hamburger" aria-label="Toggle navigation" aria-expanded="false">
-    <span></span><span></span><span></span>
-  </button>
+  <div class="nav-right">
+    <select class="lang-select" aria-label="Language">
+      <option value="en">EN — English</option>
+      <option value="es">ES — Español</option>
+      <option value="ja">JA — 日本語</option>
+      <option value="de">DE — Deutsch</option>
+      <option value="fr">FR — Français</option>
+      <option value="pt">PT — Português</option>
+      <option value="it">IT — Italiano</option>
+      <option value="nl">NL — Nederlands</option>
+      <option value="da">DA — Dansk</option>
+      <option value="no">NO — Norsk</option>
+      <option value="sv">SV — Svenska</option>
+      <option value="pl">PL — Polski</option>
+      <option value="zh">ZH — 中文</option>
+      <option value="ko">KO — 한국어</option>
+      <option value="ar">AR — العربية</option>
+    </select>
+    <a href="https://www.linkedin.com/in/chrisluttazi/" class="nav-cta" target="_blank" data-i18n="nav_connect">Connect</a>
+    <button class="nav-hamburger" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </nav>
 
 <!-- HERO -->
@@ -687,49 +833,61 @@
   <div class="hero-grid-bg"></div>
 
   <div class="hero-left">
-    <div class="hero-label">Available for Data Engineering Engagements</div>
+    <div class="hero-label" data-i18n="hero_label">Available — Data &amp; AI Platform Engineering</div>
     <h1 class="hero-title">
       CHRIS<br>
       <span class="line-accent">LUTTAZI</span><br>
-      DATA<br>
-      ENGINEER
+      <span data-i18n="hero_role">DATA<br>ENGINEER</span>
     </h1>
-    <p class="hero-desc">
-      <strong>Lead Data Engineer</strong> specialising in large-scale platforms built on Databricks, Apache Spark, and the modern data lake ecosystem. 10+ years across fintech, e-commerce, energy and enterprise — from Scandinavia to Japan.
+    <p class="hero-desc" data-i18n="hero_desc">
+      <strong>Lead Data Engineer</strong> specialising in large-scale lakehouse platforms built on Databricks, Apache Spark, Delta Lake and Apache Iceberg, with deep expertise in Data Vault 2.0 modelling, real-time streaming and cloud data warehousing. I design <strong>AI-ready data platforms</strong> — governed, high-quality data foundations that power analytics, machine learning, RAG pipelines and vector search — and I work <strong>AI-augmented</strong>, pairing daily with Claude and GitHub Copilot to ship production-grade systems faster. 10+ years across fintech, e-commerce, energy and enterprise, from Scandinavia to Japan.
     </p>
     <div class="hero-actions">
       <a href="https://www.linkedin.com/in/chrisluttazi/" class="btn-primary" target="_blank">LinkedIn →</a>
-      <a href="#portfolio" class="btn-ghost">View Work</a>
+      <a href="#portfolio" class="btn-ghost" data-i18n="hero_cta_view">View Work</a>
     </div>
   </div>
 
   <div class="hero-right">
+    <div class="stack-group-label" data-i18n="stack_g1">Core Platform</div>
     <div class="stack-grid">
       <div class="stack-item"><div class="stack-dot"></div><span>Apache Spark</span></div>
       <div class="stack-item"><div class="stack-dot"></div><span>Databricks</span></div>
-      <div class="stack-item"><div class="stack-dot"></div><span>Delta Lake</span></div>
-      <div class="stack-item"><div class="stack-dot"></div><span>Python / PySpark</span></div>
+      <div class="stack-item"><div class="stack-dot"></div><span>Snowflake</span></div>
+      <div class="stack-item"><div class="stack-dot"></div><span>Python · SQL</span></div>
       <div class="stack-item"><div class="stack-dot"></div><span>Scala</span></div>
       <div class="stack-item"><div class="stack-dot"></div><span>AWS · Azure</span></div>
+      <div class="stack-item"><div class="stack-dot"></div><span>Apache Airflow</span></div>
+      <div class="stack-item"><div class="stack-dot"></div><span>Apache Kafka</span></div>
+    </div>
+    <div class="stack-group-label" data-i18n="stack_g2">Modelling &amp; Architecture</div>
+    <div class="stack-grid">
+      <div class="stack-item"><div class="stack-dot"></div><span>Data Vault 2.0</span></div>
+      <div class="stack-item"><div class="stack-dot"></div><span>Lakehouse · Medallion</span></div>
+      <div class="stack-item"><div class="stack-dot"></div><span>Delta Lake · Iceberg</span></div>
       <div class="stack-item"><div class="stack-dot"></div><span>dbt</span></div>
-      <div class="stack-item"><div class="stack-dot"></div><span>Medallion Arch.</span></div>
-      <div class="stack-item"><div class="stack-dot"></div><span>AWS DMS / CDC</span></div>
+      <div class="stack-item"><div class="stack-dot"></div><span>CDC / AWS DMS</span></div>
+      <div class="stack-item"><div class="stack-dot"></div><span>Unity Catalog · Governance</span></div>
+    </div>
+    <div class="stack-group-label" data-i18n="stack_g3">AI &amp; GenAI Data Stack</div>
+    <div class="stack-grid">
+      <div class="stack-item"><div class="stack-dot"></div><span>LLM Data Pipelines</span></div>
+      <div class="stack-item"><div class="stack-dot"></div><span>RAG · Vector Search</span></div>
       <div class="stack-item"><div class="stack-dot"></div><span>AI-Augmented Dev</span></div>
-      <div class="stack-item"><div class="stack-dot"></div><span>Claude AI</span></div>
-      <div class="stack-item"><div class="stack-dot"></div><span>GitHub Copilot</span></div>
+      <div class="stack-item"><div class="stack-dot"></div><span>Claude AI · Copilot</span></div>
     </div>
     <div class="hero-stats">
       <div class="stat">
         <div class="stat-num">10<span style="font-size:28px;color:var(--accent2)">+</span></div>
-        <div class="stat-label">Years Experience</div>
+        <div class="stat-label" data-i18n="stat_years">Years Experience</div>
       </div>
       <div class="stat">
-        <div class="stat-num">3</div>
-        <div class="stat-label">Continents</div>
+        <div class="stat-num">4</div>
+        <div class="stat-label" data-i18n="stat_continents">Continents</div>
       </div>
       <div class="stat">
         <div class="stat-num">12<span style="font-size:28px;color:var(--accent2)">+</span></div>
-        <div class="stat-label">Clients Served</div>
+        <div class="stat-label" data-i18n="stat_clients">Clients Served</div>
       </div>
     </div>
   </div>
@@ -739,56 +897,98 @@
 <section id="about">
   <div class="section-header">
     <span class="section-num">01 —</span>
-    <h2 class="section-title">CAREER TIMELINE</h2>
+    <h2 class="section-title" data-i18n="sec01">CAREER TIMELINE</h2>
   </div>
   <div class="about-grid">
     <div class="about-bio fade-in">
-      <p><strong>Chris Luttazi</strong> is a Lead Data Engineer specialising in large-scale data platforms built on Databricks, Apache Spark, and the modern data lake ecosystem.</p>
+      <p data-i18n="bio_p1"><strong>Chris Luttazi</strong> is a Lead Data Engineer specialising in large-scale data platforms built on Databricks, Apache Spark, and the modern lakehouse ecosystem.</p>
       <br>
-      <p>With experience spanning <strong>fintech, energy, e-commerce, and enterprise consulting</strong>, Chris has delivered data solutions across four continents — from Scandinavia to Japan. His work spans end-to-end platform builds: from raw ingestion and CDC pipelines through Medallion architecture to production-grade analytics.</p>
+      <p data-i18n="bio_p2">His toolkit covers the full modern data stack: lakehouse architecture on <strong>Delta Lake and Apache Iceberg</strong>, <strong>Data Vault 2.0</strong> and dimensional modelling, streaming and CDC pipelines with <strong>Kafka and Spark Structured Streaming</strong>, orchestration and transformation with <strong>Airflow and dbt</strong>, and governance with <strong>Unity Catalog</strong> and data contracts.</p>
       <br>
-      <p>Currently based in <strong>Tokyo, Japan</strong>.</p>
+      <p data-i18n="bio_p3">Since the rise of generative AI, Chris has focused on <strong>AI-ready data platforms</strong> — the governed, high-quality data foundations that LLM applications, RAG systems and vector search depend on — and on <strong>AI-augmented engineering</strong>, using Claude and GitHub Copilot daily to design, build and test pipelines faster.</p>
+      <br>
+      <p data-i18n="bio_p4">With experience spanning <strong>fintech, energy, e-commerce, and enterprise consulting</strong>, Chris has delivered data solutions across four continents — from Scandinavia to Japan. Currently based in <strong>Tokyo, Japan</strong>.</p>
       <br>
       <p style="font-family: var(--mono); font-size: 12px; color: var(--accent);">
-        <span class="blink">▌</span> Azure Data Engineer Certified
+        <span class="blink">▌</span> <span data-i18n="bio_cert">Azure Data Engineer Certified</span>
       </p>
     </div>
     <div class="timeline fade-in">
       <div class="timeline-item">
         <div class="timeline-date">JAN<br>2016</div>
         <div class="timeline-content">
-          <div class="timeline-role">MS Information Systems</div>
+          <div class="timeline-role" data-i18n="tl_edu">MS Information Systems</div>
           <div class="timeline-org">Northeastern University — USA</div>
         </div>
       </div>
       <div class="timeline-item">
         <div class="timeline-date">MAR<br>2016</div>
         <div class="timeline-content">
-          <div class="timeline-role">Data Engineer</div>
+          <div class="timeline-role" data-i18n="tl_de">Data Engineer</div>
           <div class="timeline-org">Schneider Electric — Denmark</div>
         </div>
       </div>
       <div class="timeline-item">
         <div class="timeline-date">SEP<br>2018</div>
         <div class="timeline-content">
-          <div class="timeline-role">Senior Data Engineer</div>
+          <div class="timeline-role" data-i18n="tl_sde">Senior Data Engineer</div>
           <div class="timeline-org">Nets Group — Norway</div>
         </div>
       </div>
       <div class="timeline-item">
         <div class="timeline-date">JUN<br>2021</div>
         <div class="timeline-content">
-          <div class="timeline-role">Lead Data Engineer</div>
+          <div class="timeline-role" data-i18n="tl_lde">Lead Data Engineer</div>
           <div class="timeline-org">Freelance — Spain</div>
         </div>
       </div>
       <div class="timeline-item">
         <div class="timeline-date">FEB<br>2024</div>
         <div class="timeline-content">
-          <div class="timeline-role">Data Engineering Services</div>
+          <div class="timeline-role" data-i18n="tl_des">Data Engineering Services</div>
           <div class="timeline-org">Japan</div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERTISE -->
+<section id="expertise">
+  <div class="section-header">
+    <span class="section-num">02 —</span>
+    <h2 class="section-title" data-i18n="sec02">EXPERTISE</h2>
+  </div>
+  <div class="expertise-grid">
+    <div class="expertise-card fade-in">
+      <div class="expertise-num">/ 01</div>
+      <div class="expertise-title" data-i18n="ex1_t">Lakehouse Platform Engineering</div>
+      <div class="expertise-desc" data-i18n="ex1_d">End-to-end platform builds on Databricks and Snowflake: Medallion architecture, Delta Lake and Apache Iceberg table formats, performance tuning and cost optimisation at scale.</div>
+    </div>
+    <div class="expertise-card fade-in">
+      <div class="expertise-num">/ 02</div>
+      <div class="expertise-title" data-i18n="ex2_t">Data Vault 2.0 &amp; Modelling</div>
+      <div class="expertise-desc" data-i18n="ex2_d">Agile, auditable enterprise data warehousing with Data Vault 2.0 — hubs, links and satellites — combined with dimensional modelling for clean consumption layers.</div>
+    </div>
+    <div class="expertise-card fade-in">
+      <div class="expertise-num">/ 03</div>
+      <div class="expertise-title" data-i18n="ex3_t">Streaming &amp; Real-Time Pipelines</div>
+      <div class="expertise-desc" data-i18n="ex3_d">Streaming-first ingestion with Apache Kafka, Spark Structured Streaming and CDC — powering real-time analytics, ML features and low-latency data products.</div>
+    </div>
+    <div class="expertise-card fade-in">
+      <div class="expertise-num">/ 04</div>
+      <div class="expertise-title" data-i18n="ex4_t">AI-Ready Data Platforms</div>
+      <div class="expertise-desc" data-i18n="ex4_d">Data foundations for generative AI: RAG pipelines, vector search and embedding stores, plus the data contracts and governance that keep AI outputs trustworthy.</div>
+    </div>
+    <div class="expertise-card fade-in">
+      <div class="expertise-num">/ 05</div>
+      <div class="expertise-title" data-i18n="ex5_t">AI-Augmented Delivery</div>
+      <div class="expertise-desc" data-i18n="ex5_d">Engineering accelerated by AI: Claude and GitHub Copilot embedded in the workflow for code generation, testing, documentation and migrations — shipping faster without cutting corners.</div>
+    </div>
+    <div class="expertise-card fade-in">
+      <div class="expertise-num">/ 06</div>
+      <div class="expertise-title" data-i18n="ex6_t">Cloud Data Warehousing</div>
+      <div class="expertise-desc" data-i18n="ex6_d">Modern warehouse builds and migrations on Snowflake, Databricks SQL and Azure: dbt transformations, automated testing and CI/CD for analytics engineering.</div>
     </div>
   </div>
 </section>
@@ -797,8 +997,8 @@
 <div id="clients">
   <div class="inner">
     <div class="section-header" style="margin-bottom: 40px;">
-      <span class="section-num">02 —</span>
-      <h2 class="section-title">TRUSTED BY</h2>
+      <span class="section-num">03 —</span>
+      <h2 class="section-title" data-i18n="sec03">TRUSTED BY</h2>
     </div>
     <div class="client-scroll-track">
       <div class="client-scroll">
@@ -836,45 +1036,45 @@
 <!-- PORTFOLIO -->
 <section id="portfolio">
   <div class="section-header">
-    <span class="section-num">03 —</span>
-    <h2 class="section-title">OPEN SOURCE</h2>
+    <span class="section-num">04 —</span>
+    <h2 class="section-title" data-i18n="sec04">OPEN SOURCE</h2>
   </div>
   <div class="portfolio-grid">
     <a class="project-card fade-in" href="https://github.com/cluttazi/spark-etl" target="_blank">
       <div class="project-tag">Apache Spark · Python</div>
       <div class="project-title">Spark ETL</div>
       <div class="project-desc">Production-grade PySpark ETL pipeline designed for scalable batch data processing across enterprise data lakes.</div>
-      <div class="project-link">View on GitHub</div>
+      <div class="project-link" data-i18n="proj_view">View on GitHub</div>
     </a>
     <a class="project-card fade-in" href="https://github.com/cluttazi/scala-spring" target="_blank">
       <div class="project-tag">Scala · Spring</div>
       <div class="project-title">Scala Spring</div>
       <div class="project-desc">Scala-based Spring integration project demonstrating reactive streaming patterns over distributed datasets.</div>
-      <div class="project-link">View on GitHub</div>
+      <div class="project-link" data-i18n="proj_view">View on GitHub</div>
     </a>
     <a class="project-card fade-in" href="https://github.com/cluttazi/hasher" target="_blank">
       <div class="project-tag">AKKA · Scala</div>
       <div class="project-title">AKKA Hasher</div>
       <div class="project-desc">Actor-based hashing utility for concurrent data anonymisation across high-throughput streams.</div>
-      <div class="project-link">View on GitHub</div>
+      <div class="project-link" data-i18n="proj_view">View on GitHub</div>
     </a>
     <a class="project-card fade-in" href="https://github.com/cluttazi/skus" target="_blank">
       <div class="project-tag">Apache Spark · E-Commerce</div>
       <div class="project-title">SKUs</div>
       <div class="project-desc">Spark pipeline for processing and enriching large SKU catalogs for e-commerce platforms at scale.</div>
-      <div class="project-link">View on GitHub</div>
+      <div class="project-link" data-i18n="proj_view">View on GitHub</div>
     </a>
     <a class="project-card fade-in" href="https://github.com/cluttazi/upordown" target="_blank">
       <div class="project-tag">Scala · Finance</div>
       <div class="project-title">Up or Down</div>
       <div class="project-desc">Market prediction utility using historical trend analysis to classify asset momentum signals.</div>
-      <div class="project-link">View on GitHub</div>
+      <div class="project-link" data-i18n="proj_view">View on GitHub</div>
     </a>
     <a class="project-card fade-in" href="https://github.com/cluttazi/solar-irradiance" target="_blank">
       <div class="project-tag">Apache Spark · Energy</div>
       <div class="project-title">Solar Irradiance</div>
       <div class="project-desc">Spark-based analysis and forecasting of solar irradiance data for renewable energy performance modelling.</div>
-      <div class="project-link">View on GitHub</div>
+      <div class="project-link" data-i18n="proj_view">View on GitHub</div>
     </a>
   </div>
 </section>
@@ -883,10 +1083,10 @@
 <div id="contact">
   <div class="inner">
     <div>
-      <h2>LET'S BUILD<br>SOMETHING.</h2>
-      <p>Available for data engineering engagements, platform architecture, and consulting across fintech, e-commerce, and regulated industries.</p>
+      <h2 data-i18n="contact_title">LET'S BUILD<br>SOMETHING.</h2>
+      <p data-i18n="contact_desc">Available for data engineering engagements, platform architecture, AI data-platform builds and consulting across fintech, e-commerce and regulated industries.</p>
     </div>
-    <a href="https://www.linkedin.com/in/chrisluttazi/" class="cta-link" target="_blank">Connect on LinkedIn →</a>
+    <a href="https://www.linkedin.com/in/chrisluttazi/" class="cta-link" target="_blank" data-i18n="contact_cta">Connect on LinkedIn →</a>
   </div>
 </div>
 
@@ -894,13 +1094,541 @@
 <footer>
   <div class="footer-left">© luttazi.com 2026 — MIT License</div>
   <div class="footer-links">
-    <a href="privacy.html">Privacy Policy</a>
+    <a href="privacy.html" data-i18n="footer_privacy">Privacy Policy</a>
     <a href="https://www.linkedin.com/in/chrisluttazi/" target="_blank">LinkedIn</a>
     <a href="https://github.com/cluttazi" target="_blank">GitHub</a>
   </div>
 </footer>
 
 <script>
+  // ── I18N ─────────────────────────────────────────────────────────────
+  // English lives in the markup itself (best for SEO); the dictionaries
+  // below swap every [data-i18n] node. Skill tags, client names and
+  // project descriptions intentionally stay in English — recruiters
+  // search for those terms verbatim.
+  const I18N = {
+    en: {
+      nav_about: "About", nav_expertise: "Expertise", nav_clients: "Clients", nav_portfolio: "Portfolio", nav_connect: "Connect",
+      hero_label: "Available — Data & AI Platform Engineering",
+      hero_role: "DATA<br>ENGINEER",
+      hero_desc: "<strong>Lead Data Engineer</strong> specialising in large-scale lakehouse platforms built on Databricks, Apache Spark, Delta Lake and Apache Iceberg, with deep expertise in Data Vault 2.0 modelling, real-time streaming and cloud data warehousing. I design <strong>AI-ready data platforms</strong> — governed, high-quality data foundations that power analytics, machine learning, RAG pipelines and vector search — and I work <strong>AI-augmented</strong>, pairing daily with Claude and GitHub Copilot to ship production-grade systems faster. 10+ years across fintech, e-commerce, energy and enterprise, from Scandinavia to Japan.",
+      hero_cta_view: "View Work",
+      stat_years: "Years Experience", stat_continents: "Continents", stat_clients: "Clients Served",
+      stack_g1: "Core Platform", stack_g2: "Modelling & Architecture", stack_g3: "AI & GenAI Data Stack",
+      sec01: "CAREER TIMELINE", sec02: "EXPERTISE", sec03: "TRUSTED BY", sec04: "OPEN SOURCE",
+      bio_p1: "<strong>Chris Luttazi</strong> is a Lead Data Engineer specialising in large-scale data platforms built on Databricks, Apache Spark, and the modern lakehouse ecosystem.",
+      bio_p2: "His toolkit covers the full modern data stack: lakehouse architecture on <strong>Delta Lake and Apache Iceberg</strong>, <strong>Data Vault 2.0</strong> and dimensional modelling, streaming and CDC pipelines with <strong>Kafka and Spark Structured Streaming</strong>, orchestration and transformation with <strong>Airflow and dbt</strong>, and governance with <strong>Unity Catalog</strong> and data contracts.",
+      bio_p3: "Since the rise of generative AI, Chris has focused on <strong>AI-ready data platforms</strong> — the governed, high-quality data foundations that LLM applications, RAG systems and vector search depend on — and on <strong>AI-augmented engineering</strong>, using Claude and GitHub Copilot daily to design, build and test pipelines faster.",
+      bio_p4: "With experience spanning <strong>fintech, energy, e-commerce, and enterprise consulting</strong>, Chris has delivered data solutions across four continents — from Scandinavia to Japan. Currently based in <strong>Tokyo, Japan</strong>.",
+      bio_cert: "Azure Data Engineer Certified",
+      tl_edu: "MS Information Systems", tl_de: "Data Engineer", tl_sde: "Senior Data Engineer", tl_lde: "Lead Data Engineer", tl_des: "Data Engineering Services",
+      ex1_t: "Lakehouse Platform Engineering",
+      ex1_d: "End-to-end platform builds on Databricks and Snowflake: Medallion architecture, Delta Lake and Apache Iceberg table formats, performance tuning and cost optimisation at scale.",
+      ex2_t: "Data Vault 2.0 & Modelling",
+      ex2_d: "Agile, auditable enterprise data warehousing with Data Vault 2.0 — hubs, links and satellites — combined with dimensional modelling for clean consumption layers.",
+      ex3_t: "Streaming & Real-Time Pipelines",
+      ex3_d: "Streaming-first ingestion with Apache Kafka, Spark Structured Streaming and CDC — powering real-time analytics, ML features and low-latency data products.",
+      ex4_t: "AI-Ready Data Platforms",
+      ex4_d: "Data foundations for generative AI: RAG pipelines, vector search and embedding stores, plus the data contracts and governance that keep AI outputs trustworthy.",
+      ex5_t: "AI-Augmented Delivery",
+      ex5_d: "Engineering accelerated by AI: Claude and GitHub Copilot embedded in the workflow for code generation, testing, documentation and migrations — shipping faster without cutting corners.",
+      ex6_t: "Cloud Data Warehousing",
+      ex6_d: "Modern warehouse builds and migrations on Snowflake, Databricks SQL and Azure: dbt transformations, automated testing and CI/CD for analytics engineering.",
+      proj_view: "View on GitHub",
+      contact_title: "LET'S BUILD<br>SOMETHING.",
+      contact_desc: "Available for data engineering engagements, platform architecture, AI data-platform builds and consulting across fintech, e-commerce and regulated industries.",
+      contact_cta: "Connect on LinkedIn →",
+      footer_privacy: "Privacy Policy"
+    },
+    es: {
+      nav_about: "Sobre mí", nav_expertise: "Especialidades", nav_clients: "Clientes", nav_portfolio: "Portafolio", nav_connect: "Contactar",
+      hero_label: "Disponible — Ingeniería de Plataformas de Datos e IA",
+      hero_role: "INGENIERO<br>DE DATOS",
+      hero_desc: "<strong>Lead Data Engineer</strong> especializado en plataformas lakehouse a gran escala sobre Databricks, Apache Spark, Delta Lake y Apache Iceberg, con amplia experiencia en modelado Data Vault 2.0, streaming en tiempo real y data warehousing en la nube. Diseño <strong>plataformas de datos preparadas para IA</strong> — fundamentos de datos gobernados y de alta calidad para analítica, machine learning, pipelines RAG y búsqueda vectorial — y trabajo <strong>potenciado por IA</strong>, usando Claude y GitHub Copilot a diario para entregar sistemas de producción más rápido. Más de 10 años en fintech, e-commerce, energía y grandes empresas, de Escandinavia a Japón.",
+      hero_cta_view: "Ver trabajo",
+      stat_years: "Años de experiencia", stat_continents: "Continentes", stat_clients: "Clientes atendidos",
+      stack_g1: "Plataforma principal", stack_g2: "Modelado y arquitectura", stack_g3: "Stack de datos para IA",
+      sec01: "TRAYECTORIA", sec02: "ESPECIALIDADES", sec03: "CONFÍAN EN MÍ", sec04: "CÓDIGO ABIERTO",
+      bio_p1: "<strong>Chris Luttazi</strong> es Lead Data Engineer especializado en plataformas de datos a gran escala sobre Databricks, Apache Spark y el ecosistema lakehouse moderno.",
+      bio_p2: "Su caja de herramientas cubre todo el stack de datos moderno: arquitectura lakehouse sobre <strong>Delta Lake y Apache Iceberg</strong>, <strong>Data Vault 2.0</strong> y modelado dimensional, pipelines de streaming y CDC con <strong>Kafka y Spark Structured Streaming</strong>, orquestación y transformación con <strong>Airflow y dbt</strong>, y gobernanza con <strong>Unity Catalog</strong> y contratos de datos.",
+      bio_p3: "Desde el auge de la IA generativa, Chris se ha centrado en <strong>plataformas de datos preparadas para IA</strong> — los cimientos gobernados y de alta calidad de los que dependen las aplicaciones LLM, los sistemas RAG y la búsqueda vectorial — y en la <strong>ingeniería potenciada por IA</strong>, usando Claude y GitHub Copilot a diario para diseñar, construir y probar pipelines más rápido.",
+      bio_p4: "Con experiencia en <strong>fintech, energía, e-commerce y consultoría empresarial</strong>, Chris ha entregado soluciones de datos en cuatro continentes — de Escandinavia a Japón. Actualmente reside en <strong>Tokio, Japón</strong>.",
+      bio_cert: "Certificado Azure Data Engineer",
+      tl_edu: "Máster en Sistemas de Información", tl_de: "Ingeniero de Datos", tl_sde: "Ingeniero de Datos Sénior", tl_lde: "Lead Data Engineer", tl_des: "Servicios de Ingeniería de Datos",
+      ex1_t: "Ingeniería de plataformas Lakehouse",
+      ex1_d: "Construcción integral de plataformas sobre Databricks y Snowflake: arquitectura Medallion, formatos Delta Lake y Apache Iceberg, optimización de rendimiento y costes a escala.",
+      ex2_t: "Data Vault 2.0 y modelado",
+      ex2_d: "Data warehousing empresarial ágil y auditable con Data Vault 2.0 — hubs, links y satélites — combinado con modelado dimensional para capas de consumo limpias.",
+      ex3_t: "Streaming y tiempo real",
+      ex3_d: "Ingesta streaming-first con Apache Kafka, Spark Structured Streaming y CDC — para analítica en tiempo real, features de ML y productos de datos de baja latencia.",
+      ex4_t: "Plataformas de datos para IA",
+      ex4_d: "Cimientos de datos para IA generativa: pipelines RAG, búsqueda vectorial y almacenes de embeddings, junto con los contratos de datos y la gobernanza que hacen fiable a la IA.",
+      ex5_t: "Entrega potenciada por IA",
+      ex5_d: "Ingeniería acelerada por IA: Claude y GitHub Copilot integrados en el flujo de trabajo para generación de código, pruebas, documentación y migraciones — más rápido sin recortar calidad.",
+      ex6_t: "Data warehousing en la nube",
+      ex6_d: "Construcción y migración de almacenes modernos sobre Snowflake, Databricks SQL y Azure: transformaciones dbt, pruebas automatizadas y CI/CD para analytics engineering.",
+      proj_view: "Ver en GitHub",
+      contact_title: "CONSTRUYAMOS<br>ALGO.",
+      contact_desc: "Disponible para proyectos de ingeniería de datos, arquitectura de plataformas, plataformas de datos para IA y consultoría en fintech, e-commerce e industrias reguladas.",
+      contact_cta: "Conectar en LinkedIn →",
+      footer_privacy: "Política de privacidad"
+    },
+    ja: {
+      nav_about: "経歴", nav_expertise: "専門分野", nav_clients: "取引実績", nav_portfolio: "ポートフォリオ", nav_connect: "連絡する",
+      hero_label: "受付中 — データ & AI プラットフォームエンジニアリング",
+      hero_role: "データ<br>エンジニア",
+      hero_desc: "Databricks、Apache Spark、Delta Lake、Apache Iceberg を用いた大規模レイクハウス基盤を専門とする<strong>リードデータエンジニア</strong>。Data Vault 2.0 モデリング、リアルタイムストリーミング、クラウドDWHに深い知見を持ちます。分析・機械学習・RAGパイプライン・ベクトル検索を支える<strong>AI対応データ基盤</strong>を設計し、Claude や GitHub Copilot を日常的に活用する<strong>AI駆動の開発スタイル</strong>で、本番品質のシステムを迅速に提供します。フィンテック、Eコマース、エネルギー、エンタープライズで10年以上、北欧から日本まで。",
+      hero_cta_view: "実績を見る",
+      stat_years: "年の経験", stat_continents: "大陸", stat_clients: "クライアント",
+      stack_g1: "コアプラットフォーム", stack_g2: "モデリング & アーキテクチャ", stack_g3: "AI・生成AIデータスタック",
+      sec01: "キャリア", sec02: "専門分野", sec03: "取引実績", sec04: "オープンソース",
+      bio_p1: "<strong>Chris Luttazi</strong> は、Databricks、Apache Spark、モダンレイクハウスエコシステムを用いた大規模データ基盤を専門とするリードデータエンジニアです。",
+      bio_p2: "モダンデータスタック全域をカバーします:<strong>Delta Lake と Apache Iceberg</strong> によるレイクハウスアーキテクチャ、<strong>Data Vault 2.0</strong> とディメンショナルモデリング、<strong>Kafka と Spark Structured Streaming</strong> によるストリーミング・CDCパイプライン、<strong>Airflow と dbt</strong> によるオーケストレーションと変換、<strong>Unity Catalog</strong> とデータコントラクトによるガバナンス。",
+      bio_p3: "生成AIの台頭以降は、LLMアプリケーション・RAG・ベクトル検索を支える<strong>AI対応データ基盤</strong>の構築と、Claude や GitHub Copilot を日常的に使ってパイプラインの設計・構築・テストを高速化する<strong>AI駆動エンジニアリング</strong>に注力しています。",
+      bio_p4: "<strong>フィンテック、エネルギー、Eコマース、エンタープライズコンサルティング</strong>での経験を持ち、北欧から日本まで4大陸でデータソリューションを提供してきました。現在は<strong>東京</strong>を拠点としています。",
+      bio_cert: "Azure Data Engineer 認定",
+      tl_edu: "情報システム学 修士", tl_de: "データエンジニア", tl_sde: "シニアデータエンジニア", tl_lde: "リードデータエンジニア", tl_des: "データエンジニアリングサービス",
+      ex1_t: "レイクハウス基盤エンジニアリング",
+      ex1_d: "Databricks と Snowflake によるエンドツーエンドの基盤構築:Medallion アーキテクチャ、Delta Lake・Apache Iceberg テーブルフォーマット、大規模なパフォーマンスとコストの最適化。",
+      ex2_t: "Data Vault 2.0 & モデリング",
+      ex2_d: "Data Vault 2.0(ハブ・リンク・サテライト)によるアジャイルで監査可能なエンタープライズDWHと、クリーンな利用層のためのディメンショナルモデリング。",
+      ex3_t: "ストリーミング & リアルタイム",
+      ex3_d: "Apache Kafka、Spark Structured Streaming、CDC によるストリーミングファーストなデータ取り込み — リアルタイム分析、ML特徴量、低遅延データプロダクトを実現。",
+      ex4_t: "AI対応データ基盤",
+      ex4_d: "生成AIのためのデータ基盤:RAGパイプライン、ベクトル検索、埋め込みストア、そしてAIの出力を信頼できるものに保つデータコントラクトとガバナンス。",
+      ex5_t: "AI駆動デリバリー",
+      ex5_d: "AIで加速するエンジニアリング:Claude と GitHub Copilot をワークフローに組み込み、コード生成・テスト・ドキュメント・マイグレーションを品質を落とさず高速化。",
+      ex6_t: "クラウドデータウェアハウス",
+      ex6_d: "Snowflake、Databricks SQL、Azure でのモダンDWH構築と移行:dbt による変換、自動テスト、アナリティクスエンジニアリングのための CI/CD。",
+      proj_view: "GitHub で見る",
+      contact_title: "一緒に<br>作りましょう。",
+      contact_desc: "データエンジニアリング、プラットフォームアーキテクチャ、AIデータ基盤構築、コンサルティングのご依頼を受付中 — フィンテック、Eコマース、規制産業に対応。",
+      contact_cta: "LinkedIn でつながる →",
+      footer_privacy: "プライバシーポリシー"
+    },
+    de: {
+      nav_about: "Über mich", nav_expertise: "Expertise", nav_clients: "Kunden", nav_portfolio: "Portfolio", nav_connect: "Kontakt",
+      hero_label: "Verfügbar — Data & AI Platform Engineering",
+      hero_role: "DATA<br>ENGINEER",
+      hero_desc: "<strong>Lead Data Engineer</strong> mit Spezialisierung auf großskalige Lakehouse-Plattformen mit Databricks, Apache Spark, Delta Lake und Apache Iceberg sowie tiefer Expertise in Data-Vault-2.0-Modellierung, Echtzeit-Streaming und Cloud Data Warehousing. Ich entwerfe <strong>AI-ready Datenplattformen</strong> — governte, hochwertige Datenfundamente für Analytics, Machine Learning, RAG-Pipelines und Vektorsuche — und arbeite <strong>AI-augmented</strong>: Claude und GitHub Copilot gehören zu meinem täglichen Werkzeug, um Produktionssysteme schneller zu liefern. Über 10 Jahre Erfahrung in Fintech, E-Commerce, Energie und Enterprise, von Skandinavien bis Japan.",
+      hero_cta_view: "Projekte ansehen",
+      stat_years: "Jahre Erfahrung", stat_continents: "Kontinente", stat_clients: "Kunden betreut",
+      stack_g1: "Kernplattform", stack_g2: "Modellierung & Architektur", stack_g3: "AI- & GenAI-Datenstack",
+      sec01: "WERDEGANG", sec02: "EXPERTISE", sec03: "REFERENZEN", sec04: "OPEN SOURCE",
+      bio_p1: "<strong>Chris Luttazi</strong> ist Lead Data Engineer mit Spezialisierung auf großskalige Datenplattformen mit Databricks, Apache Spark und dem modernen Lakehouse-Ökosystem.",
+      bio_p2: "Sein Werkzeugkasten deckt den gesamten modernen Data Stack ab: Lakehouse-Architektur auf <strong>Delta Lake und Apache Iceberg</strong>, <strong>Data Vault 2.0</strong> und dimensionale Modellierung, Streaming- und CDC-Pipelines mit <strong>Kafka und Spark Structured Streaming</strong>, Orchestrierung und Transformation mit <strong>Airflow und dbt</strong> sowie Governance mit <strong>Unity Catalog</strong> und Data Contracts.",
+      bio_p3: "Seit dem Aufstieg generativer KI konzentriert sich Chris auf <strong>AI-ready Datenplattformen</strong> — die governten, hochwertigen Datenfundamente, auf die LLM-Anwendungen, RAG-Systeme und Vektorsuche angewiesen sind — sowie auf <strong>AI-augmented Engineering</strong> mit Claude und GitHub Copilot im täglichen Einsatz.",
+      bio_p4: "Mit Erfahrung in <strong>Fintech, Energie, E-Commerce und Enterprise Consulting</strong> hat Chris Datenlösungen auf vier Kontinenten geliefert — von Skandinavien bis Japan. Derzeit lebt er in <strong>Tokio, Japan</strong>.",
+      bio_cert: "Azure Data Engineer zertifiziert",
+      tl_edu: "MS Information Systems", tl_de: "Data Engineer", tl_sde: "Senior Data Engineer", tl_lde: "Lead Data Engineer", tl_des: "Data-Engineering-Dienstleistungen",
+      ex1_t: "Lakehouse Platform Engineering",
+      ex1_d: "End-to-End-Plattformaufbau auf Databricks und Snowflake: Medallion-Architektur, Delta-Lake- und Apache-Iceberg-Tabellenformate, Performance-Tuning und Kostenoptimierung im großen Maßstab.",
+      ex2_t: "Data Vault 2.0 & Modellierung",
+      ex2_d: "Agiles, auditierbares Enterprise Data Warehousing mit Data Vault 2.0 — Hubs, Links und Satelliten — kombiniert mit dimensionaler Modellierung für saubere Konsumschichten.",
+      ex3_t: "Streaming & Echtzeit-Pipelines",
+      ex3_d: "Streaming-first-Ingestion mit Apache Kafka, Spark Structured Streaming und CDC — für Echtzeit-Analytics, ML-Features und Datenprodukte mit niedriger Latenz.",
+      ex4_t: "AI-ready Datenplattformen",
+      ex4_d: "Datenfundamente für generative KI: RAG-Pipelines, Vektorsuche und Embedding-Stores, dazu Data Contracts und Governance, die KI-Ergebnisse vertrauenswürdig halten.",
+      ex5_t: "AI-augmented Delivery",
+      ex5_d: "Durch KI beschleunigtes Engineering: Claude und GitHub Copilot fest im Workflow — Codegenerierung, Tests, Dokumentation und Migrationen, schneller ohne Qualitätsverlust.",
+      ex6_t: "Cloud Data Warehousing",
+      ex6_d: "Moderner Warehouse-Aufbau und Migrationen auf Snowflake, Databricks SQL und Azure: dbt-Transformationen, automatisierte Tests und CI/CD für Analytics Engineering.",
+      proj_view: "Auf GitHub ansehen",
+      contact_title: "LASS UNS ETWAS<br>BAUEN.",
+      contact_desc: "Verfügbar für Data-Engineering-Projekte, Plattformarchitektur, AI-Datenplattformen und Beratung in Fintech, E-Commerce und regulierten Branchen.",
+      contact_cta: "Auf LinkedIn vernetzen →",
+      footer_privacy: "Datenschutz"
+    },
+    fr: {
+      nav_about: "À propos", nav_expertise: "Expertise", nav_clients: "Clients", nav_portfolio: "Portfolio", nav_connect: "Contact",
+      hero_label: "Disponible — Ingénierie de plateformes Data & IA",
+      hero_role: "INGÉNIEUR<br>DATA",
+      hero_desc: "<strong>Lead Data Engineer</strong> spécialisé dans les plateformes lakehouse à grande échelle sur Databricks, Apache Spark, Delta Lake et Apache Iceberg, avec une expertise approfondie en modélisation Data Vault 2.0, streaming temps réel et data warehousing cloud. Je conçois des <strong>plateformes de données prêtes pour l'IA</strong> — des fondations gouvernées et de haute qualité pour l'analytique, le machine learning, les pipelines RAG et la recherche vectorielle — et je travaille <strong>augmenté par l'IA</strong>, avec Claude et GitHub Copilot au quotidien pour livrer plus vite des systèmes de production. Plus de 10 ans d'expérience en fintech, e-commerce, énergie et grandes entreprises, de la Scandinavie au Japon.",
+      hero_cta_view: "Voir mes projets",
+      stat_years: "Ans d'expérience", stat_continents: "Continents", stat_clients: "Clients servis",
+      stack_g1: "Plateforme principale", stack_g2: "Modélisation & architecture", stack_g3: "Stack data IA & GenAI",
+      sec01: "PARCOURS", sec02: "EXPERTISE", sec03: "ILS ME FONT CONFIANCE", sec04: "OPEN SOURCE",
+      bio_p1: "<strong>Chris Luttazi</strong> est Lead Data Engineer, spécialisé dans les plateformes de données à grande échelle sur Databricks, Apache Spark et l'écosystème lakehouse moderne.",
+      bio_p2: "Sa boîte à outils couvre tout le stack data moderne : architecture lakehouse sur <strong>Delta Lake et Apache Iceberg</strong>, <strong>Data Vault 2.0</strong> et modélisation dimensionnelle, pipelines de streaming et CDC avec <strong>Kafka et Spark Structured Streaming</strong>, orchestration et transformation avec <strong>Airflow et dbt</strong>, et gouvernance avec <strong>Unity Catalog</strong> et les data contracts.",
+      bio_p3: "Depuis l'essor de l'IA générative, Chris se concentre sur les <strong>plateformes de données prêtes pour l'IA</strong> — les fondations gouvernées et de haute qualité dont dépendent les applications LLM, les systèmes RAG et la recherche vectorielle — et sur l'<strong>ingénierie augmentée par l'IA</strong>, en utilisant Claude et GitHub Copilot au quotidien.",
+      bio_p4: "Fort d'une expérience en <strong>fintech, énergie, e-commerce et conseil aux entreprises</strong>, Chris a livré des solutions data sur quatre continents — de la Scandinavie au Japon. Il est actuellement basé à <strong>Tokyo, Japon</strong>.",
+      bio_cert: "Certifié Azure Data Engineer",
+      tl_edu: "Master en systèmes d'information", tl_de: "Ingénieur Data", tl_sde: "Ingénieur Data Senior", tl_lde: "Lead Data Engineer", tl_des: "Services d'ingénierie data",
+      ex1_t: "Ingénierie de plateformes Lakehouse",
+      ex1_d: "Construction de plateformes de bout en bout sur Databricks et Snowflake : architecture Medallion, formats Delta Lake et Apache Iceberg, optimisation des performances et des coûts à grande échelle.",
+      ex2_t: "Data Vault 2.0 & modélisation",
+      ex2_d: "Data warehousing d'entreprise agile et auditable avec Data Vault 2.0 — hubs, links et satellites — combiné à la modélisation dimensionnelle pour des couches de consommation propres.",
+      ex3_t: "Streaming & temps réel",
+      ex3_d: "Ingestion streaming-first avec Apache Kafka, Spark Structured Streaming et CDC — pour l'analytique temps réel, les features ML et les produits data à faible latence.",
+      ex4_t: "Plateformes data prêtes pour l'IA",
+      ex4_d: "Fondations de données pour l'IA générative : pipelines RAG, recherche vectorielle et magasins d'embeddings, plus les data contracts et la gouvernance qui rendent l'IA fiable.",
+      ex5_t: "Livraison augmentée par l'IA",
+      ex5_d: "Une ingénierie accélérée par l'IA : Claude et GitHub Copilot intégrés au workflow — génération de code, tests, documentation et migrations, plus vite sans sacrifier la qualité.",
+      ex6_t: "Data warehousing cloud",
+      ex6_d: "Construction et migration d'entrepôts modernes sur Snowflake, Databricks SQL et Azure : transformations dbt, tests automatisés et CI/CD pour l'analytics engineering.",
+      proj_view: "Voir sur GitHub",
+      contact_title: "CONSTRUISONS<br>ENSEMBLE.",
+      contact_desc: "Disponible pour des missions d'ingénierie data, d'architecture de plateformes, de plateformes data pour l'IA et de conseil — fintech, e-commerce et secteurs régulés.",
+      contact_cta: "Se connecter sur LinkedIn →",
+      footer_privacy: "Politique de confidentialité"
+    },
+    pt: {
+      nav_about: "Sobre", nav_expertise: "Especialidades", nav_clients: "Clientes", nav_portfolio: "Portfólio", nav_connect: "Contato",
+      hero_label: "Disponível — Engenharia de Plataformas de Dados e IA",
+      hero_role: "ENGENHEIRO<br>DE DADOS",
+      hero_desc: "<strong>Lead Data Engineer</strong> especializado em plataformas lakehouse de grande escala com Databricks, Apache Spark, Delta Lake e Apache Iceberg, com profunda experiência em modelagem Data Vault 2.0, streaming em tempo real e data warehousing na nuvem. Projeto <strong>plataformas de dados prontas para IA</strong> — fundações de dados governadas e de alta qualidade para analytics, machine learning, pipelines RAG e busca vetorial — e trabalho <strong>potencializado por IA</strong>, usando Claude e GitHub Copilot diariamente para entregar sistemas de produção mais rápido. Mais de 10 anos em fintech, e-commerce, energia e grandes empresas, da Escandinávia ao Japão.",
+      hero_cta_view: "Ver trabalhos",
+      stat_years: "Anos de experiência", stat_continents: "Continentes", stat_clients: "Clientes atendidos",
+      stack_g1: "Plataforma principal", stack_g2: "Modelagem e arquitetura", stack_g3: "Stack de dados para IA",
+      sec01: "TRAJETÓRIA", sec02: "ESPECIALIDADES", sec03: "CONFIAM EM MIM", sec04: "CÓDIGO ABERTO",
+      bio_p1: "<strong>Chris Luttazi</strong> é Lead Data Engineer especializado em plataformas de dados de grande escala com Databricks, Apache Spark e o ecossistema lakehouse moderno.",
+      bio_p2: "Seu ferramental cobre todo o stack de dados moderno: arquitetura lakehouse com <strong>Delta Lake e Apache Iceberg</strong>, <strong>Data Vault 2.0</strong> e modelagem dimensional, pipelines de streaming e CDC com <strong>Kafka e Spark Structured Streaming</strong>, orquestração e transformação com <strong>Airflow e dbt</strong>, e governança com <strong>Unity Catalog</strong> e contratos de dados.",
+      bio_p3: "Desde a ascensão da IA generativa, Chris tem focado em <strong>plataformas de dados prontas para IA</strong> — as fundações governadas e de alta qualidade das quais dependem aplicações LLM, sistemas RAG e busca vetorial — e em <strong>engenharia potencializada por IA</strong>, usando Claude e GitHub Copilot diariamente.",
+      bio_p4: "Com experiência em <strong>fintech, energia, e-commerce e consultoria corporativa</strong>, Chris entregou soluções de dados em quatro continentes — da Escandinávia ao Japão. Atualmente mora em <strong>Tóquio, Japão</strong>.",
+      bio_cert: "Certificado Azure Data Engineer",
+      tl_edu: "Mestrado em Sistemas de Informação", tl_de: "Engenheiro de Dados", tl_sde: "Engenheiro de Dados Sênior", tl_lde: "Lead Data Engineer", tl_des: "Serviços de Engenharia de Dados",
+      ex1_t: "Engenharia de plataformas Lakehouse",
+      ex1_d: "Construção de plataformas de ponta a ponta em Databricks e Snowflake: arquitetura Medallion, formatos Delta Lake e Apache Iceberg, tuning de performance e otimização de custos em escala.",
+      ex2_t: "Data Vault 2.0 e modelagem",
+      ex2_d: "Data warehousing corporativo ágil e auditável com Data Vault 2.0 — hubs, links e satélites — combinado com modelagem dimensional para camadas de consumo limpas.",
+      ex3_t: "Streaming e tempo real",
+      ex3_d: "Ingestão streaming-first com Apache Kafka, Spark Structured Streaming e CDC — viabilizando analytics em tempo real, features de ML e produtos de dados de baixa latência.",
+      ex4_t: "Plataformas de dados para IA",
+      ex4_d: "Fundações de dados para IA generativa: pipelines RAG, busca vetorial e armazenamento de embeddings, além dos contratos de dados e governança que mantêm a IA confiável.",
+      ex5_t: "Entrega potencializada por IA",
+      ex5_d: "Engenharia acelerada por IA: Claude e GitHub Copilot integrados ao fluxo de trabalho — geração de código, testes, documentação e migrações, mais rápido sem cortar qualidade.",
+      ex6_t: "Data warehousing na nuvem",
+      ex6_d: "Construção e migração de data warehouses modernos em Snowflake, Databricks SQL e Azure: transformações dbt, testes automatizados e CI/CD para analytics engineering.",
+      proj_view: "Ver no GitHub",
+      contact_title: "VAMOS CONSTRUIR<br>ALGO.",
+      contact_desc: "Disponível para projetos de engenharia de dados, arquitetura de plataformas, plataformas de dados para IA e consultoria em fintech, e-commerce e setores regulados.",
+      contact_cta: "Conectar no LinkedIn →",
+      footer_privacy: "Política de privacidade"
+    },
+    it: {
+      nav_about: "Chi sono", nav_expertise: "Competenze", nav_clients: "Clienti", nav_portfolio: "Portfolio", nav_connect: "Contattami",
+      hero_label: "Disponibile — Ingegneria di piattaforme Data & AI",
+      hero_role: "DATA<br>ENGINEER",
+      hero_desc: "<strong>Lead Data Engineer</strong> specializzato in piattaforme lakehouse su larga scala con Databricks, Apache Spark, Delta Lake e Apache Iceberg, con profonda esperienza in modellazione Data Vault 2.0, streaming in tempo reale e data warehousing cloud. Progetto <strong>piattaforme dati pronte per l'IA</strong> — fondamenta di dati governate e di alta qualità per analytics, machine learning, pipeline RAG e ricerca vettoriale — e lavoro <strong>potenziato dall'IA</strong>, usando Claude e GitHub Copilot ogni giorno per consegnare più velocemente sistemi di produzione. Oltre 10 anni tra fintech, e-commerce, energia ed enterprise, dalla Scandinavia al Giappone.",
+      hero_cta_view: "Vedi i lavori",
+      stat_years: "Anni di esperienza", stat_continents: "Continenti", stat_clients: "Clienti serviti",
+      stack_g1: "Piattaforma principale", stack_g2: "Modellazione e architettura", stack_g3: "Stack dati AI & GenAI",
+      sec01: "PERCORSO", sec02: "COMPETENZE", sec03: "SI FIDANO DI ME", sec04: "OPEN SOURCE",
+      bio_p1: "<strong>Chris Luttazi</strong> è un Lead Data Engineer specializzato in piattaforme dati su larga scala con Databricks, Apache Spark e il moderno ecosistema lakehouse.",
+      bio_p2: "Il suo bagaglio copre l'intero stack dati moderno: architettura lakehouse su <strong>Delta Lake e Apache Iceberg</strong>, <strong>Data Vault 2.0</strong> e modellazione dimensionale, pipeline di streaming e CDC con <strong>Kafka e Spark Structured Streaming</strong>, orchestrazione e trasformazione con <strong>Airflow e dbt</strong>, e governance con <strong>Unity Catalog</strong> e data contract.",
+      bio_p3: "Dall'avvento dell'IA generativa, Chris si concentra su <strong>piattaforme dati pronte per l'IA</strong> — le fondamenta governate e di alta qualità da cui dipendono applicazioni LLM, sistemi RAG e ricerca vettoriale — e sull'<strong>ingegneria potenziata dall'IA</strong>, usando Claude e GitHub Copilot ogni giorno.",
+      bio_p4: "Con esperienza in <strong>fintech, energia, e-commerce e consulenza enterprise</strong>, Chris ha realizzato soluzioni dati in quattro continenti — dalla Scandinavia al Giappone. Attualmente vive a <strong>Tokyo, Giappone</strong>.",
+      bio_cert: "Certificato Azure Data Engineer",
+      tl_edu: "Laurea magistrale in Sistemi Informativi", tl_de: "Data Engineer", tl_sde: "Senior Data Engineer", tl_lde: "Lead Data Engineer", tl_des: "Servizi di Data Engineering",
+      ex1_t: "Ingegneria di piattaforme Lakehouse",
+      ex1_d: "Costruzione end-to-end di piattaforme su Databricks e Snowflake: architettura Medallion, formati Delta Lake e Apache Iceberg, tuning delle prestazioni e ottimizzazione dei costi su larga scala.",
+      ex2_t: "Data Vault 2.0 e modellazione",
+      ex2_d: "Data warehousing aziendale agile e verificabile con Data Vault 2.0 — hub, link e satelliti — combinato con la modellazione dimensionale per livelli di consumo puliti.",
+      ex3_t: "Streaming e tempo reale",
+      ex3_d: "Ingestione streaming-first con Apache Kafka, Spark Structured Streaming e CDC — per analytics in tempo reale, feature ML e prodotti dati a bassa latenza.",
+      ex4_t: "Piattaforme dati pronte per l'IA",
+      ex4_d: "Fondamenta dati per l'IA generativa: pipeline RAG, ricerca vettoriale e store di embedding, più i data contract e la governance che rendono l'IA affidabile.",
+      ex5_t: "Delivery potenziata dall'IA",
+      ex5_d: "Ingegneria accelerata dall'IA: Claude e GitHub Copilot integrati nel flusso di lavoro — generazione di codice, test, documentazione e migrazioni, più velocemente senza rinunciare alla qualità.",
+      ex6_t: "Cloud data warehousing",
+      ex6_d: "Costruzione e migrazione di data warehouse moderni su Snowflake, Databricks SQL e Azure: trasformazioni dbt, test automatizzati e CI/CD per l'analytics engineering.",
+      proj_view: "Vedi su GitHub",
+      contact_title: "COSTRUIAMO<br>QUALCOSA.",
+      contact_desc: "Disponibile per progetti di data engineering, architettura di piattaforme, piattaforme dati per l'IA e consulenza in fintech, e-commerce e settori regolamentati.",
+      contact_cta: "Connettiti su LinkedIn →",
+      footer_privacy: "Informativa sulla privacy"
+    },
+    nl: {
+      nav_about: "Over mij", nav_expertise: "Expertise", nav_clients: "Klanten", nav_portfolio: "Portfolio", nav_connect: "Contact",
+      hero_label: "Beschikbaar — Data & AI Platform Engineering",
+      hero_role: "DATA<br>ENGINEER",
+      hero_desc: "<strong>Lead Data Engineer</strong> gespecialiseerd in grootschalige lakehouse-platformen op Databricks, Apache Spark, Delta Lake en Apache Iceberg, met diepgaande expertise in Data Vault 2.0-modellering, realtime streaming en cloud data warehousing. Ik ontwerp <strong>AI-ready dataplatformen</strong> — governed, hoogwaardige datafundamenten voor analytics, machine learning, RAG-pipelines en vectorzoeken — en werk <strong>AI-augmented</strong>: Claude en GitHub Copilot zijn dagelijks gereedschap om productiesystemen sneller op te leveren. Ruim 10 jaar ervaring in fintech, e-commerce, energie en enterprise, van Scandinavië tot Japan.",
+      hero_cta_view: "Bekijk werk",
+      stat_years: "Jaar ervaring", stat_continents: "Continenten", stat_clients: "Klanten bediend",
+      stack_g1: "Kernplatform", stack_g2: "Modellering & architectuur", stack_g3: "AI & GenAI datastack",
+      sec01: "LOOPBAAN", sec02: "EXPERTISE", sec03: "VERTROUWD DOOR", sec04: "OPEN SOURCE",
+      bio_p1: "<strong>Chris Luttazi</strong> is Lead Data Engineer, gespecialiseerd in grootschalige dataplatformen op Databricks, Apache Spark en het moderne lakehouse-ecosysteem.",
+      bio_p2: "Zijn gereedschapskist dekt de volledige moderne datastack: lakehouse-architectuur op <strong>Delta Lake en Apache Iceberg</strong>, <strong>Data Vault 2.0</strong> en dimensionele modellering, streaming- en CDC-pipelines met <strong>Kafka en Spark Structured Streaming</strong>, orkestratie en transformatie met <strong>Airflow en dbt</strong>, en governance met <strong>Unity Catalog</strong> en data contracts.",
+      bio_p3: "Sinds de opkomst van generatieve AI richt Chris zich op <strong>AI-ready dataplatformen</strong> — de governed, hoogwaardige datafundamenten waar LLM-applicaties, RAG-systemen en vectorzoeken op steunen — en op <strong>AI-augmented engineering</strong>, met Claude en GitHub Copilot als dagelijkse tools.",
+      bio_p4: "Met ervaring in <strong>fintech, energie, e-commerce en enterprise consulting</strong> leverde Chris dataoplossingen op vier continenten — van Scandinavië tot Japan. Hij woont momenteel in <strong>Tokio, Japan</strong>.",
+      bio_cert: "Azure Data Engineer gecertificeerd",
+      tl_edu: "MS Informatiesystemen", tl_de: "Data Engineer", tl_sde: "Senior Data Engineer", tl_lde: "Lead Data Engineer", tl_des: "Data-engineeringdiensten",
+      ex1_t: "Lakehouse platform engineering",
+      ex1_d: "End-to-end platformbouw op Databricks en Snowflake: Medallion-architectuur, Delta Lake- en Apache Iceberg-tabelformaten, performancetuning en kostenoptimalisatie op schaal.",
+      ex2_t: "Data Vault 2.0 & modellering",
+      ex2_d: "Wendbaar, auditeerbaar enterprise data warehousing met Data Vault 2.0 — hubs, links en satellieten — gecombineerd met dimensionele modellering voor schone consumptielagen.",
+      ex3_t: "Streaming & realtime pipelines",
+      ex3_d: "Streaming-first ingestie met Apache Kafka, Spark Structured Streaming en CDC — voor realtime analytics, ML-features en dataproducten met lage latency.",
+      ex4_t: "AI-ready dataplatformen",
+      ex4_d: "Datafundamenten voor generatieve AI: RAG-pipelines, vectorzoeken en embedding-stores, plus de data contracts en governance die AI-output betrouwbaar houden.",
+      ex5_t: "AI-augmented delivery",
+      ex5_d: "Engineering versneld door AI: Claude en GitHub Copilot verankerd in de workflow — codegeneratie, testen, documentatie en migraties, sneller zonder concessies aan kwaliteit.",
+      ex6_t: "Cloud data warehousing",
+      ex6_d: "Moderne warehouse-bouw en migraties op Snowflake, Databricks SQL en Azure: dbt-transformaties, geautomatiseerd testen en CI/CD voor analytics engineering.",
+      proj_view: "Bekijk op GitHub",
+      contact_title: "LATEN WE IETS<br>BOUWEN.",
+      contact_desc: "Beschikbaar voor data-engineeringopdrachten, platformarchitectuur, AI-dataplatformen en consultancy in fintech, e-commerce en gereguleerde sectoren.",
+      contact_cta: "Verbind op LinkedIn →",
+      footer_privacy: "Privacybeleid"
+    },
+    da: {
+      nav_about: "Om mig", nav_expertise: "Ekspertise", nav_clients: "Kunder", nav_portfolio: "Portefølje", nav_connect: "Kontakt",
+      hero_label: "Ledig — Data & AI Platform Engineering",
+      hero_role: "DATA<br>ENGINEER",
+      hero_desc: "<strong>Lead Data Engineer</strong> med speciale i storskala lakehouse-platforme bygget på Databricks, Apache Spark, Delta Lake og Apache Iceberg, med dyb ekspertise i Data Vault 2.0-modellering, realtidsstreaming og cloud data warehousing. Jeg designer <strong>AI-klare dataplatforme</strong> — governede datafundamenter af høj kvalitet, der driver analytics, machine learning, RAG-pipelines og vektorsøgning — og jeg arbejder <strong>AI-forstærket</strong> med Claude og GitHub Copilot som daglige værktøjer til hurtigere levering af produktionssystemer. 10+ år inden for fintech, e-handel, energi og enterprise, fra Skandinavien til Japan.",
+      hero_cta_view: "Se arbejde",
+      stat_years: "Års erfaring", stat_continents: "Kontinenter", stat_clients: "Kunder betjent",
+      stack_g1: "Kerneplatform", stack_g2: "Modellering & arkitektur", stack_g3: "AI & GenAI datastack",
+      sec01: "KARRIERE", sec02: "EKSPERTISE", sec03: "BETROET AF", sec04: "OPEN SOURCE",
+      bio_p1: "<strong>Chris Luttazi</strong> er Lead Data Engineer med speciale i storskala dataplatforme bygget på Databricks, Apache Spark og det moderne lakehouse-økosystem.",
+      bio_p2: "Hans værktøjskasse dækker hele den moderne datastack: lakehouse-arkitektur på <strong>Delta Lake og Apache Iceberg</strong>, <strong>Data Vault 2.0</strong> og dimensionel modellering, streaming- og CDC-pipelines med <strong>Kafka og Spark Structured Streaming</strong>, orkestrering og transformation med <strong>Airflow og dbt</strong> samt governance med <strong>Unity Catalog</strong> og datakontrakter.",
+      bio_p3: "Siden generativ AI's fremkomst har Chris fokuseret på <strong>AI-klare dataplatforme</strong> — de governede fundamenter af høj kvalitet, som LLM-applikationer, RAG-systemer og vektorsøgning afhænger af — og på <strong>AI-forstærket engineering</strong> med Claude og GitHub Copilot som daglige værktøjer.",
+      bio_p4: "Med erfaring fra <strong>fintech, energi, e-handel og enterprise-rådgivning</strong> har Chris leveret dataløsninger på fire kontinenter — fra Skandinavien til Japan. Han bor i øjeblikket i <strong>Tokyo, Japan</strong>.",
+      bio_cert: "Azure Data Engineer-certificeret",
+      tl_edu: "MS i informationssystemer", tl_de: "Data Engineer", tl_sde: "Senior Data Engineer", tl_lde: "Lead Data Engineer", tl_des: "Data engineering-ydelser",
+      ex1_t: "Lakehouse platform engineering",
+      ex1_d: "End-to-end platformbyggeri på Databricks og Snowflake: Medallion-arkitektur, Delta Lake- og Apache Iceberg-tabelformater, performance-tuning og omkostningsoptimering i stor skala.",
+      ex2_t: "Data Vault 2.0 & modellering",
+      ex2_d: "Agilt, auditerbart enterprise data warehousing med Data Vault 2.0 — hubs, links og satellitter — kombineret med dimensionel modellering til rene forbrugslag.",
+      ex3_t: "Streaming & realtidspipelines",
+      ex3_d: "Streaming-first indtag med Apache Kafka, Spark Structured Streaming og CDC — som driver realtidsanalyse, ML-features og dataprodukter med lav latenstid.",
+      ex4_t: "AI-klare dataplatforme",
+      ex4_d: "Datafundamenter til generativ AI: RAG-pipelines, vektorsøgning og embedding-lagre samt de datakontrakter og den governance, der holder AI-output troværdigt.",
+      ex5_t: "AI-forstærket levering",
+      ex5_d: "Engineering accelereret af AI: Claude og GitHub Copilot indlejret i arbejdsgangen — kodegenerering, test, dokumentation og migreringer, hurtigere uden at gå på kompromis.",
+      ex6_t: "Cloud data warehousing",
+      ex6_d: "Moderne warehouse-byggeri og migreringer på Snowflake, Databricks SQL og Azure: dbt-transformationer, automatiseret test og CI/CD til analytics engineering.",
+      proj_view: "Se på GitHub",
+      contact_title: "LAD OS BYGGE<br>NOGET.",
+      contact_desc: "Ledig til data engineering-opgaver, platformarkitektur, AI-dataplatforme og rådgivning inden for fintech, e-handel og regulerede brancher.",
+      contact_cta: "Forbind på LinkedIn →",
+      footer_privacy: "Privatlivspolitik"
+    },
+    no: {
+      nav_about: "Om meg", nav_expertise: "Ekspertise", nav_clients: "Kunder", nav_portfolio: "Portefølje", nav_connect: "Kontakt",
+      hero_label: "Tilgjengelig — Data & AI Platform Engineering",
+      hero_role: "DATA<br>ENGINEER",
+      hero_desc: "<strong>Lead Data Engineer</strong> med spesialisering i storskala lakehouse-plattformer bygget på Databricks, Apache Spark, Delta Lake og Apache Iceberg, med dyp ekspertise i Data Vault 2.0-modellering, sanntidsstrømming og cloud data warehousing. Jeg designer <strong>AI-klare dataplattformer</strong> — styrte datafundamenter av høy kvalitet som driver analyse, maskinlæring, RAG-pipelines og vektorsøk — og jeg jobber <strong>AI-forsterket</strong> med Claude og GitHub Copilot som daglige verktøy for raskere leveranse av produksjonssystemer. 10+ år innen fintech, e-handel, energi og enterprise, fra Skandinavia til Japan.",
+      hero_cta_view: "Se arbeid",
+      stat_years: "Års erfaring", stat_continents: "Kontinenter", stat_clients: "Kunder betjent",
+      stack_g1: "Kjerneplattform", stack_g2: "Modellering & arkitektur", stack_g3: "AI & GenAI datastack",
+      sec01: "KARRIERE", sec02: "EKSPERTISE", sec03: "KLARERT AV", sec04: "ÅPEN KILDEKODE",
+      bio_p1: "<strong>Chris Luttazi</strong> er Lead Data Engineer med spesialisering i storskala dataplattformer bygget på Databricks, Apache Spark og det moderne lakehouse-økosystemet.",
+      bio_p2: "Verktøykassen hans dekker hele den moderne datastacken: lakehouse-arkitektur på <strong>Delta Lake og Apache Iceberg</strong>, <strong>Data Vault 2.0</strong> og dimensjonal modellering, strømming- og CDC-pipelines med <strong>Kafka og Spark Structured Streaming</strong>, orkestrering og transformasjon med <strong>Airflow og dbt</strong>, og styring med <strong>Unity Catalog</strong> og datakontrakter.",
+      bio_p3: "Siden fremveksten av generativ AI har Chris fokusert på <strong>AI-klare dataplattformer</strong> — de styrte fundamentene av høy kvalitet som LLM-applikasjoner, RAG-systemer og vektorsøk er avhengige av — og på <strong>AI-forsterket engineering</strong> med Claude og GitHub Copilot som daglige verktøy.",
+      bio_p4: "Med erfaring fra <strong>fintech, energi, e-handel og enterprise-rådgivning</strong> har Chris levert dataløsninger på fire kontinenter — fra Skandinavia til Japan. Han er for tiden basert i <strong>Tokyo, Japan</strong>.",
+      bio_cert: "Azure Data Engineer-sertifisert",
+      tl_edu: "MS i informasjonssystemer", tl_de: "Data Engineer", tl_sde: "Senior Data Engineer", tl_lde: "Lead Data Engineer", tl_des: "Data engineering-tjenester",
+      ex1_t: "Lakehouse platform engineering",
+      ex1_d: "Ende-til-ende plattformbygging på Databricks og Snowflake: Medallion-arkitektur, Delta Lake- og Apache Iceberg-tabellformater, ytelsestuning og kostnadsoptimalisering i stor skala.",
+      ex2_t: "Data Vault 2.0 & modellering",
+      ex2_d: "Smidig, reviderbar enterprise data warehousing med Data Vault 2.0 — huber, lenker og satellitter — kombinert med dimensjonal modellering for rene konsumlag.",
+      ex3_t: "Strømming & sanntidspipelines",
+      ex3_d: "Streaming-first-inntak med Apache Kafka, Spark Structured Streaming og CDC — som driver sanntidsanalyse, ML-features og dataprodukter med lav latens.",
+      ex4_t: "AI-klare dataplattformer",
+      ex4_d: "Datafundamenter for generativ AI: RAG-pipelines, vektorsøk og embedding-lagre, pluss datakontraktene og styringen som holder AI-resultater pålitelige.",
+      ex5_t: "AI-forsterket leveranse",
+      ex5_d: "Engineering akselerert av AI: Claude og GitHub Copilot innebygd i arbeidsflyten — kodegenerering, testing, dokumentasjon og migreringer, raskere uten å kutte hjørner.",
+      ex6_t: "Cloud data warehousing",
+      ex6_d: "Moderne warehouse-bygging og migreringer på Snowflake, Databricks SQL og Azure: dbt-transformasjoner, automatisert testing og CI/CD for analytics engineering.",
+      proj_view: "Se på GitHub",
+      contact_title: "LA OSS BYGGE<br>NOE.",
+      contact_desc: "Tilgjengelig for data engineering-oppdrag, plattformarkitektur, AI-dataplattformer og rådgivning innen fintech, e-handel og regulerte bransjer.",
+      contact_cta: "Koble til på LinkedIn →",
+      footer_privacy: "Personvernerklæring"
+    },
+    sv: {
+      nav_about: "Om mig", nav_expertise: "Expertis", nav_clients: "Kunder", nav_portfolio: "Portfölj", nav_connect: "Kontakt",
+      hero_label: "Tillgänglig — Data & AI Platform Engineering",
+      hero_role: "DATA<br>ENGINEER",
+      hero_desc: "<strong>Lead Data Engineer</strong> specialiserad på storskaliga lakehouse-plattformar byggda på Databricks, Apache Spark, Delta Lake och Apache Iceberg, med djup expertis inom Data Vault 2.0-modellering, realtidsströmning och cloud data warehousing. Jag designar <strong>AI-redo dataplattformar</strong> — styrda datafundament av hög kvalitet som driver analys, maskininlärning, RAG-pipelines och vektorsökning — och jag arbetar <strong>AI-förstärkt</strong> med Claude och GitHub Copilot som dagliga verktyg för att leverera produktionssystem snabbare. 10+ år inom fintech, e-handel, energi och enterprise, från Skandinavien till Japan.",
+      hero_cta_view: "Se arbete",
+      stat_years: "Års erfarenhet", stat_continents: "Kontinenter", stat_clients: "Kunder betjänade",
+      stack_g1: "Kärnplattform", stack_g2: "Modellering & arkitektur", stack_g3: "AI & GenAI datastack",
+      sec01: "KARRIÄR", sec02: "EXPERTIS", sec03: "BETRODD AV", sec04: "ÖPPEN KÄLLKOD",
+      bio_p1: "<strong>Chris Luttazi</strong> är Lead Data Engineer specialiserad på storskaliga dataplattformar byggda på Databricks, Apache Spark och det moderna lakehouse-ekosystemet.",
+      bio_p2: "Hans verktygslåda täcker hela den moderna datastacken: lakehouse-arkitektur på <strong>Delta Lake och Apache Iceberg</strong>, <strong>Data Vault 2.0</strong> och dimensionell modellering, strömmande och CDC-pipelines med <strong>Kafka och Spark Structured Streaming</strong>, orkestrering och transformation med <strong>Airflow och dbt</strong>, samt styrning med <strong>Unity Catalog</strong> och datakontrakt.",
+      bio_p3: "Sedan den generativa AI:ns framväxt har Chris fokuserat på <strong>AI-redo dataplattformar</strong> — de styrda fundament av hög kvalitet som LLM-applikationer, RAG-system och vektorsökning är beroende av — och på <strong>AI-förstärkt utveckling</strong> med Claude och GitHub Copilot som dagliga verktyg.",
+      bio_p4: "Med erfarenhet från <strong>fintech, energi, e-handel och enterprise-konsulting</strong> har Chris levererat datalösningar på fyra kontinenter — från Skandinavien till Japan. Han är för närvarande baserad i <strong>Tokyo, Japan</strong>.",
+      bio_cert: "Azure Data Engineer-certifierad",
+      tl_edu: "MS i informationssystem", tl_de: "Data Engineer", tl_sde: "Senior Data Engineer", tl_lde: "Lead Data Engineer", tl_des: "Data engineering-tjänster",
+      ex1_t: "Lakehouse platform engineering",
+      ex1_d: "Plattformsbyggen från början till slut på Databricks och Snowflake: Medallion-arkitektur, Delta Lake- och Apache Iceberg-tabellformat, prestandatrimning och kostnadsoptimering i stor skala.",
+      ex2_t: "Data Vault 2.0 & modellering",
+      ex2_d: "Agil, reviderbar enterprise data warehousing med Data Vault 2.0 — hubbar, länkar och satelliter — kombinerat med dimensionell modellering för rena konsumtionslager.",
+      ex3_t: "Strömning & realtidspipelines",
+      ex3_d: "Streaming-first-inmatning med Apache Kafka, Spark Structured Streaming och CDC — som driver realtidsanalys, ML-features och dataprodukter med låg latens.",
+      ex4_t: "AI-redo dataplattformar",
+      ex4_d: "Datafundament för generativ AI: RAG-pipelines, vektorsökning och embedding-lager, plus de datakontrakt och den styrning som håller AI-resultat pålitliga.",
+      ex5_t: "AI-förstärkt leverans",
+      ex5_d: "Utveckling accelererad av AI: Claude och GitHub Copilot inbyggda i arbetsflödet — kodgenerering, testning, dokumentation och migreringar, snabbare utan att tumma på kvaliteten.",
+      ex6_t: "Cloud data warehousing",
+      ex6_d: "Moderna warehouse-byggen och migreringar på Snowflake, Databricks SQL och Azure: dbt-transformationer, automatiserad testning och CI/CD för analytics engineering.",
+      proj_view: "Se på GitHub",
+      contact_title: "LÅT OSS BYGGA<br>NÅGOT.",
+      contact_desc: "Tillgänglig för data engineering-uppdrag, plattformsarkitektur, AI-dataplattformar och konsulting inom fintech, e-handel och reglerade branscher.",
+      contact_cta: "Anslut på LinkedIn →",
+      footer_privacy: "Integritetspolicy"
+    },
+    pl: {
+      nav_about: "O mnie", nav_expertise: "Specjalizacje", nav_clients: "Klienci", nav_portfolio: "Portfolio", nav_connect: "Kontakt",
+      hero_label: "Dostępny — inżynieria platform danych i AI",
+      hero_role: "INŻYNIER<br>DANYCH",
+      hero_desc: "<strong>Lead Data Engineer</strong> specjalizujący się w wielkoskalowych platformach lakehouse opartych na Databricks, Apache Spark, Delta Lake i Apache Iceberg, z głęboką wiedzą w modelowaniu Data Vault 2.0, streamingu czasu rzeczywistego i chmurowych hurtowniach danych. Projektuję <strong>platformy danych gotowe na AI</strong> — zarządzane, wysokiej jakości fundamenty danych dla analityki, uczenia maszynowego, pipeline'ów RAG i wyszukiwania wektorowego — i pracuję <strong>wspomagany przez AI</strong>, codziennie korzystając z Claude i GitHub Copilot, by szybciej dostarczać systemy produkcyjne. Ponad 10 lat w fintechu, e-commerce, energetyce i enterprise, od Skandynawii po Japonię.",
+      hero_cta_view: "Zobacz projekty",
+      stat_years: "Lat doświadczenia", stat_continents: "Kontynenty", stat_clients: "Obsłużonych klientów",
+      stack_g1: "Platforma podstawowa", stack_g2: "Modelowanie i architektura", stack_g3: "Stos danych AI i GenAI",
+      sec01: "KARIERA", sec02: "SPECJALIZACJE", sec03: "ZAUFALI MI", sec04: "OPEN SOURCE",
+      bio_p1: "<strong>Chris Luttazi</strong> jest Lead Data Engineerem specjalizującym się w wielkoskalowych platformach danych opartych na Databricks, Apache Spark i nowoczesnym ekosystemie lakehouse.",
+      bio_p2: "Jego warsztat obejmuje cały nowoczesny stos danych: architekturę lakehouse na <strong>Delta Lake i Apache Iceberg</strong>, <strong>Data Vault 2.0</strong> i modelowanie wymiarowe, pipeline'y streamingowe i CDC z <strong>Kafką i Spark Structured Streaming</strong>, orkiestrację i transformacje z <strong>Airflow i dbt</strong> oraz governance z <strong>Unity Catalog</strong> i kontraktami danych.",
+      bio_p3: "Od czasu rozkwitu generatywnej AI Chris koncentruje się na <strong>platformach danych gotowych na AI</strong> — zarządzanych, wysokiej jakości fundamentach, od których zależą aplikacje LLM, systemy RAG i wyszukiwanie wektorowe — oraz na <strong>inżynierii wspomaganej przez AI</strong>, codziennie używając Claude i GitHub Copilot.",
+      bio_p4: "Z doświadczeniem w <strong>fintechu, energetyce, e-commerce i konsultingu enterprise</strong> Chris dostarczał rozwiązania danych na czterech kontynentach — od Skandynawii po Japonię. Obecnie mieszka w <strong>Tokio, w Japonii</strong>.",
+      bio_cert: "Certyfikat Azure Data Engineer",
+      tl_edu: "Magister systemów informacyjnych", tl_de: "Inżynier danych", tl_sde: "Starszy inżynier danych", tl_lde: "Lead Data Engineer", tl_des: "Usługi inżynierii danych",
+      ex1_t: "Inżynieria platform lakehouse",
+      ex1_d: "Kompleksowa budowa platform na Databricks i Snowflake: architektura Medallion, formaty tabel Delta Lake i Apache Iceberg, strojenie wydajności i optymalizacja kosztów na dużą skalę.",
+      ex2_t: "Data Vault 2.0 i modelowanie",
+      ex2_d: "Zwinne, audytowalne hurtownie danych klasy enterprise z Data Vault 2.0 — huby, linki i satelity — w połączeniu z modelowaniem wymiarowym dla czystych warstw konsumpcji.",
+      ex3_t: "Streaming i czas rzeczywisty",
+      ex3_d: "Ingestia streaming-first z Apache Kafka, Spark Structured Streaming i CDC — zasilająca analitykę czasu rzeczywistego, cechy ML i produkty danych o niskich opóźnieniach.",
+      ex4_t: "Platformy danych gotowe na AI",
+      ex4_d: "Fundamenty danych dla generatywnej AI: pipeline'y RAG, wyszukiwanie wektorowe i magazyny embeddingów, plus kontrakty danych i governance, dzięki którym AI pozostaje wiarygodna.",
+      ex5_t: "Dostarczanie wspomagane przez AI",
+      ex5_d: "Inżynieria przyspieszona przez AI: Claude i GitHub Copilot wbudowane w przepływ pracy — generowanie kodu, testy, dokumentacja i migracje, szybciej bez obniżania jakości.",
+      ex6_t: "Chmurowe hurtownie danych",
+      ex6_d: "Budowa i migracje nowoczesnych hurtowni na Snowflake, Databricks SQL i Azure: transformacje dbt, testy automatyczne i CI/CD dla analytics engineering.",
+      proj_view: "Zobacz na GitHub",
+      contact_title: "ZBUDUJMY<br>COŚ RAZEM.",
+      contact_desc: "Dostępny do projektów inżynierii danych, architektury platform, platform danych dla AI i konsultingu w fintechu, e-commerce i branżach regulowanych.",
+      contact_cta: "Połącz się na LinkedIn →",
+      footer_privacy: "Polityka prywatności"
+    },
+    zh: {
+      nav_about: "关于我", nav_expertise: "专长", nav_clients: "客户", nav_portfolio: "作品", nav_connect: "联系",
+      hero_label: "可接项目 — 数据与 AI 平台工程",
+      hero_role: "数据<br>工程师",
+      hero_desc: "<strong>首席数据工程师</strong>,专注于基于 Databricks、Apache Spark、Delta Lake 和 Apache Iceberg 的大规模湖仓一体平台,在 Data Vault 2.0 建模、实时流处理和云数据仓库方面拥有深厚经验。我设计<strong>面向 AI 的数据平台</strong>——为分析、机器学习、RAG 管道和向量检索提供受治理的高质量数据基础——并以 <strong>AI 增强</strong>的方式工作,每天使用 Claude 和 GitHub Copilot,更快交付生产级系统。10 余年经验,横跨金融科技、电商、能源和大型企业,从北欧到日本。",
+      hero_cta_view: "查看作品",
+      stat_years: "年经验", stat_continents: "大洲", stat_clients: "服务客户",
+      stack_g1: "核心平台", stack_g2: "建模与架构", stack_g3: "AI 与生成式 AI 数据栈",
+      sec01: "职业经历", sec02: "专长领域", sec03: "合作客户", sec04: "开源项目",
+      bio_p1: "<strong>Chris Luttazi</strong> 是一名首席数据工程师,专注于基于 Databricks、Apache Spark 和现代湖仓生态系统的大规模数据平台。",
+      bio_p2: "他的技能覆盖整个现代数据栈:基于 <strong>Delta Lake 和 Apache Iceberg</strong> 的湖仓架构、<strong>Data Vault 2.0</strong> 与维度建模、使用 <strong>Kafka 和 Spark Structured Streaming</strong> 的流处理与 CDC 管道、使用 <strong>Airflow 和 dbt</strong> 的编排与转换,以及基于 <strong>Unity Catalog</strong> 和数据契约的治理。",
+      bio_p3: "自生成式 AI 兴起以来,Chris 专注于<strong>面向 AI 的数据平台</strong>——LLM 应用、RAG 系统和向量检索所依赖的受治理的高质量数据基础——以及 <strong>AI 增强工程</strong>,每天使用 Claude 和 GitHub Copilot 更快地设计、构建和测试数据管道。",
+      bio_p4: "凭借在<strong>金融科技、能源、电商和企业咨询</strong>领域的经验,Chris 已在四大洲交付数据解决方案——从北欧到日本。目前常驻<strong>日本东京</strong>。",
+      bio_cert: "Azure 数据工程师认证",
+      tl_edu: "信息系统硕士", tl_de: "数据工程师", tl_sde: "高级数据工程师", tl_lde: "首席数据工程师", tl_des: "数据工程服务",
+      ex1_t: "湖仓平台工程",
+      ex1_d: "在 Databricks 和 Snowflake 上端到端构建平台:Medallion 架构、Delta Lake 和 Apache Iceberg 表格式、大规模性能调优与成本优化。",
+      ex2_t: "Data Vault 2.0 与建模",
+      ex2_d: "使用 Data Vault 2.0(Hub、Link、Satellite)构建敏捷、可审计的企业数据仓库,并结合维度建模打造清晰的消费层。",
+      ex3_t: "流处理与实时管道",
+      ex3_d: "基于 Apache Kafka、Spark Structured Streaming 和 CDC 的流优先摄取——支撑实时分析、机器学习特征和低延迟数据产品。",
+      ex4_t: "面向 AI 的数据平台",
+      ex4_d: "为生成式 AI 打造数据基础:RAG 管道、向量检索和嵌入存储,以及让 AI 输出值得信赖的数据契约与治理。",
+      ex5_t: "AI 增强交付",
+      ex5_d: "AI 加速的工程实践:将 Claude 和 GitHub Copilot 融入工作流——代码生成、测试、文档和迁移,提速而不降质。",
+      ex6_t: "云数据仓库",
+      ex6_d: "在 Snowflake、Databricks SQL 和 Azure 上构建与迁移现代数据仓库:dbt 转换、自动化测试和面向分析工程的 CI/CD。",
+      proj_view: "在 GitHub 上查看",
+      contact_title: "一起构建<br>点什么。",
+      contact_desc: "可承接数据工程项目、平台架构、AI 数据平台建设及咨询——覆盖金融科技、电商及受监管行业。",
+      contact_cta: "在 LinkedIn 上联系 →",
+      footer_privacy: "隐私政策"
+    },
+    ko: {
+      nav_about: "소개", nav_expertise: "전문 분야", nav_clients: "고객사", nav_portfolio: "포트폴리오", nav_connect: "연락하기",
+      hero_label: "가능 — 데이터 & AI 플랫폼 엔지니어링",
+      hero_role: "데이터<br>엔지니어",
+      hero_desc: "Databricks, Apache Spark, Delta Lake, Apache Iceberg 기반의 대규모 레이크하우스 플랫폼을 전문으로 하는 <strong>리드 데이터 엔지니어</strong>입니다. Data Vault 2.0 모델링, 실시간 스트리밍, 클라우드 데이터 웨어하우징에 깊은 전문성을 갖추고 있습니다. 분석, 머신러닝, RAG 파이프라인, 벡터 검색을 뒷받침하는 <strong>AI 대응 데이터 플랫폼</strong>을 설계하며, Claude와 GitHub Copilot을 매일 활용하는 <strong>AI 증강 방식</strong>으로 프로덕션급 시스템을 더 빠르게 제공합니다. 핀테크, 이커머스, 에너지, 엔터프라이즈 분야에서 10년 이상, 스칸디나비아에서 일본까지.",
+      hero_cta_view: "작업 보기",
+      stat_years: "년 경력", stat_continents: "개 대륙", stat_clients: "고객사",
+      stack_g1: "핵심 플랫폼", stack_g2: "모델링 & 아키텍처", stack_g3: "AI & 생성형 AI 데이터 스택",
+      sec01: "경력", sec02: "전문 분야", sec03: "함께한 고객사", sec04: "오픈 소스",
+      bio_p1: "<strong>Chris Luttazi</strong>는 Databricks, Apache Spark, 현대 레이크하우스 생태계를 기반으로 한 대규모 데이터 플랫폼 전문 리드 데이터 엔지니어입니다.",
+      bio_p2: "그의 역량은 현대 데이터 스택 전체를 아우릅니다: <strong>Delta Lake와 Apache Iceberg</strong> 기반 레이크하우스 아키텍처, <strong>Data Vault 2.0</strong>과 차원 모델링, <strong>Kafka와 Spark Structured Streaming</strong>을 활용한 스트리밍·CDC 파이프라인, <strong>Airflow와 dbt</strong>를 통한 오케스트레이션과 변환, <strong>Unity Catalog</strong>와 데이터 계약 기반 거버넌스.",
+      bio_p3: "생성형 AI의 부상 이후 Chris는 LLM 애플리케이션, RAG 시스템, 벡터 검색이 의존하는 <strong>AI 대응 데이터 플랫폼</strong> 구축과, Claude와 GitHub Copilot을 매일 활용해 파이프라인 설계·구축·테스트를 가속하는 <strong>AI 증강 엔지니어링</strong>에 집중하고 있습니다.",
+      bio_p4: "<strong>핀테크, 에너지, 이커머스, 엔터프라이즈 컨설팅</strong> 경험을 바탕으로 스칸디나비아에서 일본까지 4개 대륙에서 데이터 솔루션을 제공해 왔습니다. 현재 <strong>일본 도쿄</strong>에 거주 중입니다.",
+      bio_cert: "Azure Data Engineer 인증",
+      tl_edu: "정보시스템 석사", tl_de: "데이터 엔지니어", tl_sde: "시니어 데이터 엔지니어", tl_lde: "리드 데이터 엔지니어", tl_des: "데이터 엔지니어링 서비스",
+      ex1_t: "레이크하우스 플랫폼 엔지니어링",
+      ex1_d: "Databricks와 Snowflake 기반의 엔드투엔드 플랫폼 구축: Medallion 아키텍처, Delta Lake·Apache Iceberg 테이블 포맷, 대규모 성능 튜닝과 비용 최적화.",
+      ex2_t: "Data Vault 2.0 & 모델링",
+      ex2_d: "Data Vault 2.0(허브·링크·새틀라이트)을 활용한 민첩하고 감사 가능한 엔터프라이즈 데이터 웨어하우징과, 깔끔한 소비 계층을 위한 차원 모델링.",
+      ex3_t: "스트리밍 & 실시간 파이프라인",
+      ex3_d: "Apache Kafka, Spark Structured Streaming, CDC를 활용한 스트리밍 우선 수집 — 실시간 분석, ML 피처, 저지연 데이터 제품을 구동합니다.",
+      ex4_t: "AI 대응 데이터 플랫폼",
+      ex4_d: "생성형 AI를 위한 데이터 기반: RAG 파이프라인, 벡터 검색, 임베딩 스토어, 그리고 AI 출력을 신뢰할 수 있게 만드는 데이터 계약과 거버넌스.",
+      ex5_t: "AI 증강 딜리버리",
+      ex5_d: "AI로 가속되는 엔지니어링: Claude와 GitHub Copilot을 워크플로에 내재화 — 코드 생성, 테스트, 문서화, 마이그레이션을 품질 저하 없이 더 빠르게.",
+      ex6_t: "클라우드 데이터 웨어하우징",
+      ex6_d: "Snowflake, Databricks SQL, Azure 기반의 현대적 웨어하우스 구축과 마이그레이션: dbt 변환, 자동화 테스트, 분석 엔지니어링을 위한 CI/CD.",
+      proj_view: "GitHub에서 보기",
+      contact_title: "함께<br>만들어요.",
+      contact_desc: "데이터 엔지니어링, 플랫폼 아키텍처, AI 데이터 플랫폼 구축 및 컨설팅 프로젝트 가능 — 핀테크, 이커머스, 규제 산업 대응.",
+      contact_cta: "LinkedIn에서 연결 →",
+      footer_privacy: "개인정보 처리방침"
+    },
+    ar: {
+      nav_about: "نبذة عني", nav_expertise: "الخبرات", nav_clients: "العملاء", nav_portfolio: "الأعمال", nav_connect: "تواصل",
+      hero_label: "متاح — هندسة منصات البيانات والذكاء الاصطناعي",
+      hero_role: "مهندس<br>بيانات",
+      hero_desc: "<strong>مهندس بيانات رئيسي</strong> متخصص في منصات Lakehouse واسعة النطاق المبنية على Databricks وApache Spark وDelta Lake وApache Iceberg، مع خبرة عميقة في نمذجة Data Vault 2.0 والبث الفوري ومستودعات البيانات السحابية. أصمم <strong>منصات بيانات جاهزة للذكاء الاصطناعي</strong> — أسس بيانات محوكمة وعالية الجودة تدعم التحليلات وتعلم الآلة وخطوط RAG والبحث المتجهي — وأعمل <strong>معززًا بالذكاء الاصطناعي</strong>، مستخدمًا Claude وGitHub Copilot يوميًا لتسليم أنظمة إنتاجية بشكل أسرع. أكثر من 10 سنوات في التقنية المالية والتجارة الإلكترونية والطاقة والمؤسسات، من إسكندنافيا إلى اليابان.",
+      hero_cta_view: "عرض الأعمال",
+      stat_years: "سنوات خبرة", stat_continents: "قارات", stat_clients: "عميلًا",
+      stack_g1: "المنصة الأساسية", stack_g2: "النمذجة والهندسة المعمارية", stack_g3: "حِزمة بيانات الذكاء الاصطناعي",
+      sec01: "المسيرة المهنية", sec02: "الخبرات", sec03: "وثقوا بي", sec04: "المصادر المفتوحة",
+      bio_p1: "<strong>كريس لوتازي</strong> مهندس بيانات رئيسي متخصص في منصات البيانات واسعة النطاق المبنية على Databricks وApache Spark ومنظومة Lakehouse الحديثة.",
+      bio_p2: "تغطي أدواته كامل حِزمة البيانات الحديثة: هندسة Lakehouse على <strong>Delta Lake وApache Iceberg</strong>، ونمذجة <strong>Data Vault 2.0</strong> والنمذجة البُعدية، وخطوط البث وCDC مع <strong>Kafka وSpark Structured Streaming</strong>، والتنسيق والتحويل مع <strong>Airflow وdbt</strong>، والحوكمة مع <strong>Unity Catalog</strong> وعقود البيانات.",
+      bio_p3: "منذ صعود الذكاء الاصطناعي التوليدي، يركّز كريس على <strong>منصات البيانات الجاهزة للذكاء الاصطناعي</strong> — الأسس المحوكمة وعالية الجودة التي تعتمد عليها تطبيقات LLM وأنظمة RAG والبحث المتجهي — وعلى <strong>الهندسة المعززة بالذكاء الاصطناعي</strong> باستخدام Claude وGitHub Copilot يوميًا.",
+      bio_p4: "بخبرة تمتد عبر <strong>التقنية المالية والطاقة والتجارة الإلكترونية والاستشارات المؤسسية</strong>، قدّم كريس حلول بيانات في أربع قارات — من إسكندنافيا إلى اليابان. يقيم حاليًا في <strong>طوكيو، اليابان</strong>.",
+      bio_cert: "معتمد Azure Data Engineer",
+      tl_edu: "ماجستير نظم المعلومات", tl_de: "مهندس بيانات", tl_sde: "مهندس بيانات أول", tl_lde: "مهندس بيانات رئيسي", tl_des: "خدمات هندسة البيانات",
+      ex1_t: "هندسة منصات Lakehouse",
+      ex1_d: "بناء منصات متكاملة على Databricks وSnowflake: هندسة Medallion، وصيغ جداول Delta Lake وApache Iceberg، وضبط الأداء وتحسين التكاليف على نطاق واسع.",
+      ex2_t: "Data Vault 2.0 والنمذجة",
+      ex2_d: "مستودعات بيانات مؤسسية رشيقة وقابلة للتدقيق مع Data Vault 2.0 — المحاور والروابط والأقمار — مدمجة مع النمذجة البُعدية لطبقات استهلاك نظيفة.",
+      ex3_t: "البث والخطوط الفورية",
+      ex3_d: "استيعاب يعتمد البث أولًا مع Apache Kafka وSpark Structured Streaming وCDC — لدعم التحليلات الفورية وخصائص تعلم الآلة ومنتجات البيانات منخفضة التأخير.",
+      ex4_t: "منصات بيانات جاهزة للذكاء الاصطناعي",
+      ex4_d: "أسس بيانات للذكاء الاصطناعي التوليدي: خطوط RAG والبحث المتجهي ومخازن التضمينات، إضافة إلى عقود البيانات والحوكمة التي تحافظ على موثوقية مخرجات الذكاء الاصطناعي.",
+      ex5_t: "تسليم معزز بالذكاء الاصطناعي",
+      ex5_d: "هندسة مسرَّعة بالذكاء الاصطناعي: Claude وGitHub Copilot مدمجان في سير العمل — توليد الشيفرة والاختبار والتوثيق والترحيل، بشكل أسرع دون التفريط في الجودة.",
+      ex6_t: "مستودعات البيانات السحابية",
+      ex6_d: "بناء وترحيل مستودعات حديثة على Snowflake وDatabricks SQL وAzure: تحويلات dbt واختبارات آلية وCI/CD لهندسة التحليلات.",
+      proj_view: "عرض على GitHub",
+      contact_title: "لنبنِ<br>شيئًا معًا.",
+      contact_desc: "متاح لمشاريع هندسة البيانات وهندسة المنصات وبناء منصات بيانات الذكاء الاصطناعي والاستشارات في التقنية المالية والتجارة الإلكترونية والقطاعات المنظمة.",
+      contact_cta: "تواصل عبر LinkedIn ←",
+      footer_privacy: "سياسة الخصوصية"
+    }
+  };
+
+  const RTL_LANGS = ['ar'];
+  const langSelect = document.querySelector('.lang-select');
+
+  function setLang(lang) {
+    if (!I18N[lang]) lang = 'en';
+    const dict = I18N[lang];
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      const value = dict[key] ?? I18N.en[key];
+      if (value != null) el.innerHTML = value;
+    });
+    document.documentElement.lang = lang;
+    document.documentElement.dir = RTL_LANGS.includes(lang) ? 'rtl' : 'ltr';
+    langSelect.value = lang;
+    try { localStorage.setItem('lang', lang); } catch (e) { /* private mode */ }
+  }
+
+  let storedLang = null;
+  try { storedLang = localStorage.getItem('lang'); } catch (e) { /* private mode */ }
+  const browserLang = (navigator.language || 'en').slice(0, 2).toLowerCase();
+  const initialLang = (storedLang && I18N[storedLang]) ? storedLang : (I18N[browserLang] ? browserLang : 'en');
+  if (initialLang !== 'en') setLang(initialLang);
+
+  langSelect.addEventListener('change', e => setLang(e.target.value));
+
   // Scroll-triggered fade-in
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
