@@ -1250,6 +1250,14 @@
     .hero-stats { grid-template-columns: 1fr 1fr; }
   }
 </style>
+<noscript>
+<style>
+  .title-line > span, .hero-label, .hero-desc, .hero-actions, .hero-right > * {
+    animation: none !important; opacity: 1 !important; transform: none !important;
+  }
+  .intro-type { display: none; }
+</style>
+</noscript>
 </head>
 <body>
 
@@ -1283,20 +1291,11 @@
       <option value="ar">AR — العربية</option>
     </select>
     <a href="https://www.linkedin.com/in/chrisluttazi/" class="nav-cta" target="_blank" data-i18n="nav_connect">Connect</a>
-    <button class="nav-hamburger" aria-label="Toggle navigation" aria-expanded="false">
+    <button type="button" class="nav-hamburger" aria-label="Toggle navigation" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </div>
 </nav>
-
-<noscript>
-<style>
-  .title-line > span, .hero-label, .hero-desc, .hero-actions, .hero-right > * {
-    animation: none !important; opacity: 1 !important; transform: none !important;
-  }
-  .intro-type { display: none; }
-</style>
-</noscript>
 
 <!-- INTRO SUMMARY -->
 <section id="intro">
