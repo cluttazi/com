@@ -93,3 +93,41 @@ Baseline: 9 errors across both pages.
   markup — cosmetic accessibility polish, not worth churn now.
 - No build system, bundler, minification, or framework — intentionally
   out of scope for a hand-maintained static page.
+
+## Outcome — Done vs Deferred
+
+### Done (this branch)
+
+- `fix(html)`: `type="button"` on all 3 typeless buttons; the
+  `<noscript><style>` no-JS fallback moved from `<body>` to `<head>`.
+  html-validate: **9 errors → 0** across both pages. Zero visual or
+  behavioral change.
+- `chore`: added `README.md`, `.gitignore`, `.editorconfig`,
+  `.htmlvalidate.json` (recommended preset, `long-title` and
+  `no-inline-style` exempted as intentional), and
+  `scripts/check-links.sh` (verifies every local `href`/`src` and
+  in-page anchor; negative-tested to fail on broken refs).
+- `ci`: `.github/workflows/ci.yml` — html-validate + link check on every
+  push/PR, no build step, all commands verified locally first.
+
+### Deferred (owner decision needed)
+
+- Delete unused `css/styles.css` (Bootstrap Agency theme, unreferenced)
+  and ~1.5 MB of unused `assets/` files — check for external hotlinks
+  first; git history keeps them recoverable.
+- Remove the superseded plain-text `GDPR` file.
+- Cosmetic a11y polish (`aria-pressed` on privacy language toggle) and
+  title-length SEO trade-off — intentionally left alone.
+
+## Summary (PR-description style)
+
+Conservative modernization of the static portfolio site. Fixes the only
+genuine HTML validity errors (button `type` attributes, `<style>` inside
+body `<noscript>`) with no change to content, appearance, or behavior;
+adds the missing repo hygiene files (README, .gitignore, .editorconfig);
+and introduces a fast, dependency-light CI workflow that validates both
+pages with html-validate and checks that every local asset reference and
+in-page anchor resolves. The audit found no mixed content, no broken
+references, and no vendored libraries in use (the vendored Bootstrap CSS
+is dead code — removal documented and deferred). No build system was
+introduced.
