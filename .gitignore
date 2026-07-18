@@ -1,0 +1,12 @@
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editors
+.idea/
+.vscode/
+*.swp
+
+# Node (used only for ad-hoc validation via npx)
+node_modules/
+package-lock.json
