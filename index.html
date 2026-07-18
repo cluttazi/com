@@ -918,7 +918,7 @@
   /* ── PORTFOLIO ──────────────────────────────── */
   .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 1px;
     background: var(--border);
     border: 1px solid var(--border);
@@ -935,6 +935,7 @@
     color: inherit;
     position: relative;
     overflow: hidden;
+    grid-column: span 2;
   }
 
   .project-card::after {
@@ -959,7 +960,7 @@
   .project-card:hover .project-link { gap: 12px; }
 
   .project-card.featured {
-    grid-column: 1 / -1;
+    grid-column: span 3;
     background: linear-gradient(120deg, rgba(232,255,71,0.06), var(--bg) 45%);
   }
 
@@ -976,6 +977,7 @@
   .expertise-grid .fade-in:nth-child(5), .portfolio-grid .fade-in:nth-child(5) { transition-delay: 0.32s; }
   .expertise-grid .fade-in:nth-child(6), .portfolio-grid .fade-in:nth-child(6) { transition-delay: 0.4s; }
   .portfolio-grid .fade-in:nth-child(7) { transition-delay: 0.48s; }
+  .portfolio-grid .fade-in:nth-child(8) { transition-delay: 0.56s; }
 
   .project-tag {
     font-family: var(--mono);
@@ -1229,7 +1231,9 @@
     section { padding: 80px 24px; }
     .about-grid { grid-template-columns: 1fr; gap: 48px; }
     .expertise-grid { grid-template-columns: 1fr 1fr; }
-    .portfolio-grid { grid-template-columns: 1fr 1fr; }
+    .portfolio-grid { grid-template-columns: repeat(2, 1fr); }
+    .project-card { grid-column: span 1; }
+    .project-card.featured { grid-column: span 2; }
     #contact .inner { flex-direction: column; }
     footer { flex-direction: column; gap: 16px; text-align: center; }
     .hero-stats { grid-template-columns: repeat(3, 1fr); }
@@ -1240,6 +1244,7 @@
     .kw-scroll .kw-sep { font-size: 16px; }
     .expertise-grid { grid-template-columns: 1fr; }
     .portfolio-grid { grid-template-columns: 1fr; }
+    .project-card, .project-card.featured { grid-column: auto; }
     .stack-grid { grid-template-columns: 1fr 1fr; }
     .hero-title { font-size: 64px; }
     .hero-stats { grid-template-columns: 1fr 1fr; }
@@ -1538,7 +1543,13 @@
     <a class="project-card featured fade-in" href="https://github.com/cluttazi/data-engineering" target="_blank">
       <div class="project-tag">Featured · Spark · Databricks · Data Vault 2.0</div>
       <div class="project-title">Data Engineering</div>
-      <div class="project-desc">A growing collection of production-style data engineering work: Spark pipelines, lakehouse and Medallion patterns, Data Vault 2.0 modelling, and AI-ready data tooling.</div>
+      <div class="project-desc">Production-style data engineering on banking data: Spark pipelines, lakehouse and Medallion patterns, Data Vault 2.0 modelling, and AI-ready tooling.</div>
+      <div class="project-link" data-i18n="proj_view">View on GitHub</div>
+    </a>
+    <a class="project-card featured fade-in" href="https://github.com/cluttazi/github-events" target="_blank">
+      <div class="project-tag">Featured · Streaming · GitHub Events</div>
+      <div class="project-title">GitHub Events</div>
+      <div class="project-desc">The same production-grade patterns applied to the GitHub events firehose: streaming ingestion, lakehouse modelling and analytics over real-world public activity.</div>
       <div class="project-link" data-i18n="proj_view">View on GitHub</div>
     </a>
     <a class="project-card fade-in" href="https://github.com/cluttazi/spark-etl" target="_blank">
