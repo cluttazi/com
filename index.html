@@ -248,6 +248,173 @@
 
   .nav-cta:hover { background: #d4eb00; }
 
+  /* ── INTRO SUMMARY ───────────────────────────── */
+  #intro {
+    position: relative;
+    min-height: 100vh;
+    max-width: 100%;
+    padding: 130px 24px 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .intro-spot {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(340px circle at var(--mx, 50%) var(--my, 38%), rgba(232,255,71,0.09), transparent 70%);
+  }
+
+  .intro-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro-hello {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 18px;
+    opacity: 0;
+    animation: fade-up 0.7s ease 0.1s forwards;
+  }
+
+  .intro-name {
+    font-family: var(--display);
+    font-size: clamp(64px, 11vw, 150px);
+    line-height: 0.95;
+    letter-spacing: 0.01em;
+    color: var(--text);
+    opacity: 0;
+    animation: fade-up 0.7s ease 0.2s forwards;
+  }
+
+  .intro-name .accent { color: var(--accent); }
+
+  .intro-type {
+    font-family: var(--mono);
+    font-size: clamp(15px, 2.4vw, 22px);
+    color: var(--text);
+    min-height: 1.7em;
+    margin: 20px 0 14px;
+    opacity: 0;
+    animation: fade-up 0.7s ease 0.32s forwards;
+  }
+
+  .type-cursor { color: var(--accent); }
+
+  .intro-sub {
+    font-size: 15px;
+    color: var(--muted);
+    line-height: 1.7;
+    max-width: 620px;
+    margin-bottom: 34px;
+    opacity: 0;
+    animation: fade-up 0.7s ease 0.44s forwards;
+  }
+
+  .intro-sub strong { color: var(--text); font-weight: 500; }
+
+  .intro-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    max-width: 660px;
+    margin-bottom: 14px;
+    opacity: 0;
+    animation: fade-up 0.7s ease 0.56s forwards;
+  }
+
+  .intro-chip {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 10px 18px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .intro-chip:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    transform: translateY(-2px);
+  }
+
+  .intro-chip.lit {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--bg);
+    animation: chip-pop 0.35s ease;
+  }
+
+  @keyframes chip-pop { 40% { transform: scale(1.16); } }
+
+  .intro-progress {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin-bottom: 34px;
+    opacity: 0;
+    animation: fade-up 0.7s ease 0.62s forwards;
+  }
+
+  .chip-count { color: var(--accent); }
+
+  .intro-unlocked {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--accent);
+    margin: -16px 0 26px;
+    animation: fade-up 0.5s ease forwards;
+  }
+
+  .intro-cta {
+    font-family: var(--mono);
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--bg);
+    background: var(--accent);
+    padding: 18px 44px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    opacity: 0;
+    transition: transform 0.2s, background 0.2s;
+    animation: fade-up 0.7s ease 0.72s forwards, cta-pulse 2.6s ease-in-out 1.8s infinite;
+  }
+
+  .intro-cta:hover { transform: translateY(-2px); background: #d4eb00; }
+
+  .intro-cta .arrow { animation: bounce-y 1.6s ease-in-out infinite; }
+
+  @keyframes cta-pulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(232,255,71,0.35); }
+    50% { box-shadow: 0 0 0 14px rgba(232,255,71,0); }
+  }
+
+  @keyframes bounce-y {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(4px); }
+  }
+
   /* ── HERO ────────────────────────────────────── */
   #hero {
     min-height: 100vh;
@@ -339,6 +506,7 @@
     display: inline-block;
     transform: translateY(110%);
     animation: title-up 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    animation-play-state: paused;
   }
 
   .title-line:nth-child(2) > span { animation-delay: 0.12s; }
@@ -349,6 +517,7 @@
   .hero-label, .hero-desc, .hero-actions {
     opacity: 0;
     animation: fade-up 0.8s ease forwards;
+    animation-play-state: paused;
   }
 
   .hero-label { animation-delay: 0.05s; }
@@ -358,6 +527,15 @@
   .hero-right > * {
     opacity: 0;
     animation: fade-up 0.8s ease forwards;
+    animation-play-state: paused;
+  }
+
+  #hero.in-view .title-line > span,
+  #hero.in-view .hero-label,
+  #hero.in-view .hero-desc,
+  #hero.in-view .hero-actions,
+  #hero.in-view .hero-right > * {
+    animation-play-state: running;
   }
 
   .hero-right > *:nth-child(1) { animation-delay: 0.35s; }
@@ -780,12 +958,24 @@
   .project-card .project-link { transition: gap 0.25s ease; }
   .project-card:hover .project-link { gap: 12px; }
 
+  .project-card.featured {
+    grid-column: 1 / -1;
+    background: linear-gradient(120deg, rgba(232,255,71,0.06), var(--bg) 45%);
+  }
+
+  .project-card.featured:hover {
+    background: linear-gradient(120deg, rgba(232,255,71,0.09), var(--surface) 45%);
+  }
+
+  .project-card.featured .project-tag { color: var(--accent2); }
+
   /* stagger the card reveals inside grids */
   .expertise-grid .fade-in:nth-child(2), .portfolio-grid .fade-in:nth-child(2) { transition-delay: 0.08s; }
   .expertise-grid .fade-in:nth-child(3), .portfolio-grid .fade-in:nth-child(3) { transition-delay: 0.16s; }
   .expertise-grid .fade-in:nth-child(4), .portfolio-grid .fade-in:nth-child(4) { transition-delay: 0.24s; }
   .expertise-grid .fade-in:nth-child(5), .portfolio-grid .fade-in:nth-child(5) { transition-delay: 0.32s; }
   .expertise-grid .fade-in:nth-child(6), .portfolio-grid .fade-in:nth-child(6) { transition-delay: 0.4s; }
+  .portfolio-grid .fade-in:nth-child(7) { transition-delay: 0.48s; }
 
   .project-tag {
     font-family: var(--mono);
@@ -1094,6 +1284,43 @@
   </div>
 </nav>
 
+<noscript>
+<style>
+  .title-line > span, .hero-label, .hero-desc, .hero-actions, .hero-right > * {
+    animation: none !important; opacity: 1 !important; transform: none !important;
+  }
+  .intro-type { display: none; }
+</style>
+</noscript>
+
+<!-- INTRO SUMMARY -->
+<section id="intro">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="hero-glow2" aria-hidden="true"></div>
+  <div class="intro-spot" aria-hidden="true"></div>
+
+  <div class="intro-inner">
+    <div class="intro-hello" data-i18n="intro_hello">Hello — I'm</div>
+    <p class="intro-name">CHRIS <span class="accent">LUTTAZI</span></p>
+    <div class="intro-type" aria-hidden="true"><span id="typewriter"></span><span class="type-cursor blink">▌</span></div>
+    <p class="intro-sub" data-i18n="intro_sub"><strong>Lead Data Engineer.</strong> I build lakehouse platforms on Databricks &amp; Spark, model with Data Vault 2.0, and make data AI-ready — 10+ years, 4 continents, based in Tokyo.</p>
+    <div class="intro-chips">
+      <button type="button" class="intro-chip">Databricks</button>
+      <button type="button" class="intro-chip">Apache Spark</button>
+      <button type="button" class="intro-chip">Data Vault 2.0</button>
+      <button type="button" class="intro-chip">Kafka</button>
+      <button type="button" class="intro-chip">Snowflake</button>
+      <button type="button" class="intro-chip">Airflow</button>
+      <button type="button" class="intro-chip">dbt</button>
+      <button type="button" class="intro-chip">Claude AI</button>
+    </div>
+    <div class="intro-progress"><span data-i18n="intro_hint">Tap the stack — light it all up</span> <span class="chip-count">0/8</span></div>
+    <div class="intro-unlocked" data-i18n="intro_unlocked" hidden>Full stack unlocked — we should talk.</div>
+    <a href="#hero" class="intro-cta"><span data-i18n="intro_cta">Want to know more?</span> <span class="arrow">↓</span></a>
+  </div>
+</section>
+
 <!-- HERO -->
 <section id="hero">
   <div class="hero-grid-bg"></div>
@@ -1308,6 +1535,12 @@
     <h2 class="section-title" data-i18n="sec04">OPEN SOURCE</h2>
   </div>
   <div class="portfolio-grid">
+    <a class="project-card featured fade-in" href="https://github.com/cluttazi/data-engineering" target="_blank">
+      <div class="project-tag">Featured · Spark · Databricks · Data Vault 2.0</div>
+      <div class="project-title">Data Engineering</div>
+      <div class="project-desc">A growing collection of production-style data engineering work: Spark pipelines, lakehouse and Medallion patterns, Data Vault 2.0 modelling, and AI-ready data tooling.</div>
+      <div class="project-link" data-i18n="proj_view">View on GitHub</div>
+    </a>
     <a class="project-card fade-in" href="https://github.com/cluttazi/spark-etl" target="_blank">
       <div class="project-tag">Apache Spark · Python</div>
       <div class="project-title">Spark ETL</div>
@@ -1434,7 +1667,13 @@
       contact_title: "LET'S BUILD<br>SOMETHING.",
       contact_desc: "Available for data engineering engagements, platform architecture, AI data-platform builds and consulting across fintech, e-commerce and regulated industries.",
       contact_cta: "Connect on LinkedIn →",
-      footer_privacy: "Privacy Policy"
+      footer_privacy: "Privacy Policy",
+      intro_hello: "Hello — I'm",
+      intro_sub: "<strong>Lead Data Engineer.</strong> I build lakehouse platforms on Databricks & Spark, model with Data Vault 2.0, and make data AI-ready — 10+ years, 4 continents, based in Tokyo.",
+      intro_hint: "Tap the stack — light it all up",
+      intro_unlocked: "Full stack unlocked — we should talk.",
+      intro_cta: "Want to know more?",
+      tw: ["I build lakehouse platforms.", "I model with Data Vault 2.0.", "I stream data in real time.", "I make data AI-ready."]
     },
     es: {
       nav_about: "Sobre mí", nav_expertise: "Especialidades", nav_clients: "Clientes", nav_portfolio: "Portafolio", nav_connect: "Contactar",
@@ -1467,7 +1706,13 @@
       contact_title: "CONSTRUYAMOS<br>ALGO.",
       contact_desc: "Disponible para proyectos de ingeniería de datos, arquitectura de plataformas, plataformas de datos para IA y consultoría en fintech, e-commerce e industrias reguladas.",
       contact_cta: "Conectar en LinkedIn →",
-      footer_privacy: "Política de privacidad"
+      footer_privacy: "Política de privacidad",
+      intro_hello: "Hola — soy",
+      intro_sub: "<strong>Lead Data Engineer.</strong> Construyo plataformas lakehouse sobre Databricks y Spark, modelo con Data Vault 2.0 y preparo los datos para la IA — más de 10 años, 4 continentes, desde Tokio.",
+      intro_hint: "Toca el stack — enciéndelo entero",
+      intro_unlocked: "Stack completo desbloqueado — hablemos.",
+      intro_cta: "¿Quieres saber más?",
+      tw: ["Construyo plataformas lakehouse.", "Modelo con Data Vault 2.0.", "Proceso datos en tiempo real.", "Preparo los datos para la IA."]
     },
     ja: {
       nav_about: "経歴", nav_expertise: "専門分野", nav_clients: "取引実績", nav_portfolio: "ポートフォリオ", nav_connect: "連絡する",
@@ -1500,7 +1745,13 @@
       contact_title: "一緒に<br>作りましょう。",
       contact_desc: "データエンジニアリング、プラットフォームアーキテクチャ、AIデータ基盤構築、コンサルティングのご依頼を受付中 — フィンテック、Eコマース、規制産業に対応。",
       contact_cta: "LinkedIn でつながる →",
-      footer_privacy: "プライバシーポリシー"
+      footer_privacy: "プライバシーポリシー",
+      intro_hello: "はじめまして、",
+      intro_sub: "<strong>リードデータエンジニア。</strong>Databricks と Spark でレイクハウス基盤を構築し、Data Vault 2.0 でモデリングし、データを AI 対応に。10年以上・4大陸・東京拠点。",
+      intro_hint: "スタックをタップして全部点灯させよう",
+      intro_unlocked: "フルスタック解放 — ぜひお話ししましょう。",
+      intro_cta: "もっと知りたい?",
+      tw: ["レイクハウス基盤を構築します。", "Data Vault 2.0 でモデリング。", "リアルタイムでデータを処理。", "データを AI 対応にします。"]
     },
     de: {
       nav_about: "Über mich", nav_expertise: "Expertise", nav_clients: "Kunden", nav_portfolio: "Portfolio", nav_connect: "Kontakt",
@@ -1533,7 +1784,13 @@
       contact_title: "LASS UNS ETWAS<br>BAUEN.",
       contact_desc: "Verfügbar für Data-Engineering-Projekte, Plattformarchitektur, AI-Datenplattformen und Beratung in Fintech, E-Commerce und regulierten Branchen.",
       contact_cta: "Auf LinkedIn vernetzen →",
-      footer_privacy: "Datenschutz"
+      footer_privacy: "Datenschutz",
+      intro_hello: "Hallo — ich bin",
+      intro_sub: "<strong>Lead Data Engineer.</strong> Ich baue Lakehouse-Plattformen auf Databricks & Spark, modelliere mit Data Vault 2.0 und mache Daten AI-ready — über 10 Jahre, 4 Kontinente, in Tokio.",
+      intro_hint: "Tipp auf den Stack — bring alles zum Leuchten",
+      intro_unlocked: "Kompletter Stack freigeschaltet — lass uns reden.",
+      intro_cta: "Mehr erfahren?",
+      tw: ["Ich baue Lakehouse-Plattformen.", "Ich modelliere mit Data Vault 2.0.", "Ich streame Daten in Echtzeit.", "Ich mache Daten AI-ready."]
     },
     fr: {
       nav_about: "À propos", nav_expertise: "Expertise", nav_clients: "Clients", nav_portfolio: "Portfolio", nav_connect: "Contact",
@@ -1566,7 +1823,13 @@
       contact_title: "CONSTRUISONS<br>ENSEMBLE.",
       contact_desc: "Disponible pour des missions d'ingénierie data, d'architecture de plateformes, de plateformes data pour l'IA et de conseil — fintech, e-commerce et secteurs régulés.",
       contact_cta: "Se connecter sur LinkedIn →",
-      footer_privacy: "Politique de confidentialité"
+      footer_privacy: "Politique de confidentialité",
+      intro_hello: "Bonjour — je suis",
+      intro_sub: "<strong>Lead Data Engineer.</strong> Je construis des plateformes lakehouse sur Databricks & Spark, je modélise en Data Vault 2.0 et je rends les données prêtes pour l'IA — 10+ ans, 4 continents, basé à Tokyo.",
+      intro_hint: "Touchez la stack — allumez tout",
+      intro_unlocked: "Stack complète débloquée — parlons-en.",
+      intro_cta: "Envie d'en savoir plus ?",
+      tw: ["Je construis des plateformes lakehouse.", "Je modélise en Data Vault 2.0.", "Je traite les données en temps réel.", "Je rends les données prêtes pour l'IA."]
     },
     pt: {
       nav_about: "Sobre", nav_expertise: "Especialidades", nav_clients: "Clientes", nav_portfolio: "Portfólio", nav_connect: "Contato",
@@ -1599,7 +1862,13 @@
       contact_title: "VAMOS CONSTRUIR<br>ALGO.",
       contact_desc: "Disponível para projetos de engenharia de dados, arquitetura de plataformas, plataformas de dados para IA e consultoria em fintech, e-commerce e setores regulados.",
       contact_cta: "Conectar no LinkedIn →",
-      footer_privacy: "Política de privacidade"
+      footer_privacy: "Política de privacidade",
+      intro_hello: "Olá — sou",
+      intro_sub: "<strong>Lead Data Engineer.</strong> Construo plataformas lakehouse em Databricks & Spark, modelo com Data Vault 2.0 e deixo os dados prontos para IA — 10+ anos, 4 continentes, em Tóquio.",
+      intro_hint: "Toque no stack — acenda tudo",
+      intro_unlocked: "Stack completo desbloqueado — vamos conversar.",
+      intro_cta: "Quer saber mais?",
+      tw: ["Construo plataformas lakehouse.", "Modelo com Data Vault 2.0.", "Processo dados em tempo real.", "Deixo os dados prontos para IA."]
     },
     it: {
       nav_about: "Chi sono", nav_expertise: "Competenze", nav_clients: "Clienti", nav_portfolio: "Portfolio", nav_connect: "Contattami",
@@ -1632,7 +1901,13 @@
       contact_title: "COSTRUIAMO<br>QUALCOSA.",
       contact_desc: "Disponibile per progetti di data engineering, architettura di piattaforme, piattaforme dati per l'IA e consulenza in fintech, e-commerce e settori regolamentati.",
       contact_cta: "Connettiti su LinkedIn →",
-      footer_privacy: "Informativa sulla privacy"
+      footer_privacy: "Informativa sulla privacy",
+      intro_hello: "Ciao — sono",
+      intro_sub: "<strong>Lead Data Engineer.</strong> Costruisco piattaforme lakehouse su Databricks & Spark, modello con Data Vault 2.0 e rendo i dati pronti per l'IA — 10+ anni, 4 continenti, base a Tokyo.",
+      intro_hint: "Tocca lo stack — accendilo tutto",
+      intro_unlocked: "Stack completo sbloccato — parliamone.",
+      intro_cta: "Vuoi saperne di più?",
+      tw: ["Costruisco piattaforme lakehouse.", "Modello con Data Vault 2.0.", "Elaboro dati in tempo reale.", "Rendo i dati pronti per l'IA."]
     },
     nl: {
       nav_about: "Over mij", nav_expertise: "Expertise", nav_clients: "Klanten", nav_portfolio: "Portfolio", nav_connect: "Contact",
@@ -1665,7 +1940,13 @@
       contact_title: "LATEN WE IETS<br>BOUWEN.",
       contact_desc: "Beschikbaar voor data-engineeringopdrachten, platformarchitectuur, AI-dataplatformen en consultancy in fintech, e-commerce en gereguleerde sectoren.",
       contact_cta: "Verbind op LinkedIn →",
-      footer_privacy: "Privacybeleid"
+      footer_privacy: "Privacybeleid",
+      intro_hello: "Hallo — ik ben",
+      intro_sub: "<strong>Lead Data Engineer.</strong> Ik bouw lakehouse-platformen op Databricks & Spark, modelleer met Data Vault 2.0 en maak data AI-ready — 10+ jaar, 4 continenten, gevestigd in Tokio.",
+      intro_hint: "Tik op de stack — laat alles oplichten",
+      intro_unlocked: "Volledige stack ontgrendeld — laten we praten.",
+      intro_cta: "Meer weten?",
+      tw: ["Ik bouw lakehouse-platformen.", "Ik modelleer met Data Vault 2.0.", "Ik stream data in realtime.", "Ik maak data AI-ready."]
     },
     da: {
       nav_about: "Om mig", nav_expertise: "Ekspertise", nav_clients: "Kunder", nav_portfolio: "Portefølje", nav_connect: "Kontakt",
@@ -1698,7 +1979,13 @@
       contact_title: "LAD OS BYGGE<br>NOGET.",
       contact_desc: "Ledig til data engineering-opgaver, platformarkitektur, AI-dataplatforme og rådgivning inden for fintech, e-handel og regulerede brancher.",
       contact_cta: "Forbind på LinkedIn →",
-      footer_privacy: "Privatlivspolitik"
+      footer_privacy: "Privatlivspolitik",
+      intro_hello: "Hej — jeg er",
+      intro_sub: "<strong>Lead Data Engineer.</strong> Jeg bygger lakehouse-platforme på Databricks & Spark, modellerer med Data Vault 2.0 og gør data AI-klar — 10+ år, 4 kontinenter, bosat i Tokyo.",
+      intro_hint: "Tryk på stacken — tænd det hele",
+      intro_unlocked: "Hele stacken låst op — lad os tale sammen.",
+      intro_cta: "Vil du vide mere?",
+      tw: ["Jeg bygger lakehouse-platforme.", "Jeg modellerer med Data Vault 2.0.", "Jeg streamer data i realtid.", "Jeg gør data AI-klar."]
     },
     no: {
       nav_about: "Om meg", nav_expertise: "Ekspertise", nav_clients: "Kunder", nav_portfolio: "Portefølje", nav_connect: "Kontakt",
@@ -1731,7 +2018,13 @@
       contact_title: "LA OSS BYGGE<br>NOE.",
       contact_desc: "Tilgjengelig for data engineering-oppdrag, plattformarkitektur, AI-dataplattformer og rådgivning innen fintech, e-handel og regulerte bransjer.",
       contact_cta: "Koble til på LinkedIn →",
-      footer_privacy: "Personvernerklæring"
+      footer_privacy: "Personvernerklæring",
+      intro_hello: "Hei — jeg er",
+      intro_sub: "<strong>Lead Data Engineer.</strong> Jeg bygger lakehouse-plattformer på Databricks & Spark, modellerer med Data Vault 2.0 og gjør data AI-klare — 10+ år, 4 kontinenter, basert i Tokyo.",
+      intro_hint: "Trykk på stacken — tenn alt",
+      intro_unlocked: "Hele stacken låst opp — la oss snakke.",
+      intro_cta: "Vil du vite mer?",
+      tw: ["Jeg bygger lakehouse-plattformer.", "Jeg modellerer med Data Vault 2.0.", "Jeg strømmer data i sanntid.", "Jeg gjør data AI-klare."]
     },
     sv: {
       nav_about: "Om mig", nav_expertise: "Expertis", nav_clients: "Kunder", nav_portfolio: "Portfölj", nav_connect: "Kontakt",
@@ -1764,7 +2057,13 @@
       contact_title: "LÅT OSS BYGGA<br>NÅGOT.",
       contact_desc: "Tillgänglig för data engineering-uppdrag, plattformsarkitektur, AI-dataplattformar och konsulting inom fintech, e-handel och reglerade branscher.",
       contact_cta: "Anslut på LinkedIn →",
-      footer_privacy: "Integritetspolicy"
+      footer_privacy: "Integritetspolicy",
+      intro_hello: "Hej — jag är",
+      intro_sub: "<strong>Lead Data Engineer.</strong> Jag bygger lakehouse-plattformar på Databricks & Spark, modellerar med Data Vault 2.0 och gör data AI-redo — 10+ år, 4 kontinenter, baserad i Tokyo.",
+      intro_hint: "Tryck på stacken — tänd allt",
+      intro_unlocked: "Hela stacken upplåst — låt oss prata.",
+      intro_cta: "Vill du veta mer?",
+      tw: ["Jag bygger lakehouse-plattformar.", "Jag modellerar med Data Vault 2.0.", "Jag strömmar data i realtid.", "Jag gör data AI-redo."]
     },
     pl: {
       nav_about: "O mnie", nav_expertise: "Specjalizacje", nav_clients: "Klienci", nav_portfolio: "Portfolio", nav_connect: "Kontakt",
@@ -1797,7 +2096,13 @@
       contact_title: "ZBUDUJMY<br>COŚ RAZEM.",
       contact_desc: "Dostępny do projektów inżynierii danych, architektury platform, platform danych dla AI i konsultingu w fintechu, e-commerce i branżach regulowanych.",
       contact_cta: "Połącz się na LinkedIn →",
-      footer_privacy: "Polityka prywatności"
+      footer_privacy: "Polityka prywatności",
+      intro_hello: "Cześć — jestem",
+      intro_sub: "<strong>Lead Data Engineer.</strong> Buduję platformy lakehouse na Databricks i Spark, modeluję w Data Vault 2.0 i przygotowuję dane pod AI — ponad 10 lat, 4 kontynenty, Tokio.",
+      intro_hint: "Klikaj w stack — zapal wszystko",
+      intro_unlocked: "Cały stack odblokowany — porozmawiajmy.",
+      intro_cta: "Chcesz wiedzieć więcej?",
+      tw: ["Buduję platformy lakehouse.", "Modeluję w Data Vault 2.0.", "Przetwarzam dane w czasie rzeczywistym.", "Przygotowuję dane pod AI."]
     },
     zh: {
       nav_about: "关于我", nav_expertise: "专长", nav_clients: "客户", nav_portfolio: "作品", nav_connect: "联系",
@@ -1830,7 +2135,13 @@
       contact_title: "一起构建<br>点什么。",
       contact_desc: "可承接数据工程项目、平台架构、AI 数据平台建设及咨询——覆盖金融科技、电商及受监管行业。",
       contact_cta: "在 LinkedIn 上联系 →",
-      footer_privacy: "隐私政策"
+      footer_privacy: "隐私政策",
+      intro_hello: "你好,我是",
+      intro_sub: "<strong>首席数据工程师。</strong>我在 Databricks 和 Spark 上构建湖仓平台,用 Data Vault 2.0 建模,让数据为 AI 就绪 — 10 余年经验,4 大洲,常驻东京。",
+      intro_hint: "点击技术栈,把它全部点亮",
+      intro_unlocked: "全栈点亮 — 我们聊聊吧。",
+      intro_cta: "想了解更多?",
+      tw: ["我构建湖仓一体平台。", "我用 Data Vault 2.0 建模。", "我实时处理数据流。", "我让数据为 AI 就绪。"]
     },
     ko: {
       nav_about: "소개", nav_expertise: "전문 분야", nav_clients: "고객사", nav_portfolio: "포트폴리오", nav_connect: "연락하기",
@@ -1863,7 +2174,13 @@
       contact_title: "함께<br>만들어요.",
       contact_desc: "데이터 엔지니어링, 플랫폼 아키텍처, AI 데이터 플랫폼 구축 및 컨설팅 프로젝트 가능 — 핀테크, 이커머스, 규제 산업 대응.",
       contact_cta: "LinkedIn에서 연결 →",
-      footer_privacy: "개인정보 처리방침"
+      footer_privacy: "개인정보 처리방침",
+      intro_hello: "안녕하세요 —",
+      intro_sub: "<strong>리드 데이터 엔지니어.</strong> Databricks와 Spark로 레이크하우스 플랫폼을 구축하고, Data Vault 2.0으로 모델링하며, 데이터를 AI에 맞게 준비합니다 — 10년 이상, 4개 대륙, 도쿄 거주.",
+      intro_hint: "스택을 눌러 모두 켜보세요",
+      intro_unlocked: "풀스택 잠금 해제 — 이야기 나눠요.",
+      intro_cta: "더 알고 싶으세요?",
+      tw: ["레이크하우스 플랫폼을 구축합니다.", "Data Vault 2.0으로 모델링합니다.", "실시간으로 데이터를 처리합니다.", "데이터를 AI에 맞게 준비합니다."]
     },
     ar: {
       nav_about: "نبذة عني", nav_expertise: "الخبرات", nav_clients: "العملاء", nav_portfolio: "الأعمال", nav_connect: "تواصل",
@@ -1896,12 +2213,38 @@
       contact_title: "لنبنِ<br>شيئًا معًا.",
       contact_desc: "متاح لمشاريع هندسة البيانات وهندسة المنصات وبناء منصات بيانات الذكاء الاصطناعي والاستشارات في التقنية المالية والتجارة الإلكترونية والقطاعات المنظمة.",
       contact_cta: "تواصل عبر LinkedIn ←",
-      footer_privacy: "سياسة الخصوصية"
+      footer_privacy: "سياسة الخصوصية",
+      intro_hello: "مرحبًا — أنا",
+      intro_sub: "<strong>مهندس بيانات رئيسي.</strong> أبني منصات Lakehouse على Databricks وSpark، وأنمذج بـ Data Vault 2.0، وأجهّز البيانات للذكاء الاصطناعي — أكثر من 10 سنوات، 4 قارات، مقيم في طوكيو.",
+      intro_hint: "اضغط على التقنيات — أضئها كلها",
+      intro_unlocked: "اكتملت الحزمة — لنتحدث.",
+      intro_cta: "هل تريد معرفة المزيد؟",
+      tw: ["أبني منصات Lakehouse.", "أنمذج بـ Data Vault 2.0.", "أعالج البيانات في الوقت الفعلي.", "أجهّز البيانات للذكاء الاصطناعي."]
     }
   };
 
   const RTL_LANGS = ['ar'];
   const langSelect = document.querySelector('.lang-select');
+  const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Typewriter in the intro — restarted on every language switch
+  let twTimer;
+  function startTypewriter(phrases) {
+    clearTimeout(twTimer);
+    const el = document.getElementById('typewriter');
+    if (reduceMotion) { el.textContent = phrases[0]; return; }
+    let phraseIdx = 0, charIdx = 0, deleting = false;
+    const step = () => {
+      const phrase = phrases[phraseIdx];
+      charIdx += deleting ? -1 : 1;
+      el.textContent = phrase.slice(0, charIdx);
+      let delay = deleting ? 30 : 60;
+      if (!deleting && charIdx === phrase.length) { delay = 1700; deleting = true; }
+      else if (deleting && charIdx === 0) { deleting = false; phraseIdx = (phraseIdx + 1) % phrases.length; delay = 380; }
+      twTimer = setTimeout(step, delay);
+    };
+    step();
+  }
 
   function setLang(lang) {
     if (!I18N[lang]) lang = 'en';
@@ -1921,6 +2264,7 @@
     history.replaceState(null, '', url);
     const canonical = document.querySelector('link[rel="canonical"]');
     canonical.href = lang === 'en' ? 'https://luttazi.com/' : 'https://luttazi.com/?lang=' + lang;
+    startTypewriter(dict.tw || I18N.en.tw);
   }
 
   const urlLang = new URLSearchParams(location.search).get('lang');
@@ -1930,9 +2274,37 @@
   const initialLang = (urlLang && I18N[urlLang]) ? urlLang
     : (storedLang && I18N[storedLang]) ? storedLang
     : (I18N[browserLang] ? browserLang : 'en');
-  if (initialLang !== 'en') setLang(initialLang);
+  if (initialLang !== 'en') setLang(initialLang); else startTypewriter(I18N.en.tw);
 
   langSelect.addEventListener('change', e => setLang(e.target.value));
+
+  // Intro: cursor-following spotlight
+  const intro = document.getElementById('intro');
+  intro.addEventListener('pointermove', e => {
+    const r = intro.getBoundingClientRect();
+    intro.style.setProperty('--mx', ((e.clientX - r.left) / r.width * 100) + '%');
+    intro.style.setProperty('--my', ((e.clientY - r.top) / r.height * 100) + '%');
+  });
+
+  // Intro: light-up-the-stack chip game
+  const chipEls = document.querySelectorAll('.intro-chip');
+  const chipCountEl = document.querySelector('.chip-count');
+  const unlockedEl = document.querySelector('.intro-unlocked');
+  chipEls.forEach(chip => chip.addEventListener('click', () => {
+    chip.classList.toggle('lit');
+    const lit = document.querySelectorAll('.intro-chip.lit').length;
+    chipCountEl.textContent = lit + '/' + chipEls.length;
+    if (lit === chipEls.length) unlockedEl.hidden = false;
+  }));
+
+  // Hero entrance animations fire when it scrolls into view (after the intro)
+  const heroSection = document.getElementById('hero');
+  const heroObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) { heroSection.classList.add('in-view'); heroObserver.disconnect(); }
+    });
+  }, { threshold: 0.2 });
+  heroObserver.observe(heroSection);
 
   // Scroll progress bar
   const progressBar = document.querySelector('.scroll-progress');
@@ -1943,7 +2315,6 @@
   }, { passive: true });
 
   // Stat count-up
-  const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const counterObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (!entry.isIntersecting) return;
