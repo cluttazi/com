@@ -780,12 +780,24 @@
   .project-card .project-link { transition: gap 0.25s ease; }
   .project-card:hover .project-link { gap: 12px; }
 
+  .project-card.featured {
+    grid-column: 1 / -1;
+    background: linear-gradient(120deg, rgba(232,255,71,0.06), var(--bg) 45%);
+  }
+
+  .project-card.featured:hover {
+    background: linear-gradient(120deg, rgba(232,255,71,0.09), var(--surface) 45%);
+  }
+
+  .project-card.featured .project-tag { color: var(--accent2); }
+
   /* stagger the card reveals inside grids */
   .expertise-grid .fade-in:nth-child(2), .portfolio-grid .fade-in:nth-child(2) { transition-delay: 0.08s; }
   .expertise-grid .fade-in:nth-child(3), .portfolio-grid .fade-in:nth-child(3) { transition-delay: 0.16s; }
   .expertise-grid .fade-in:nth-child(4), .portfolio-grid .fade-in:nth-child(4) { transition-delay: 0.24s; }
   .expertise-grid .fade-in:nth-child(5), .portfolio-grid .fade-in:nth-child(5) { transition-delay: 0.32s; }
   .expertise-grid .fade-in:nth-child(6), .portfolio-grid .fade-in:nth-child(6) { transition-delay: 0.4s; }
+  .portfolio-grid .fade-in:nth-child(7) { transition-delay: 0.48s; }
 
   .project-tag {
     font-family: var(--mono);
@@ -1308,6 +1320,12 @@
     <h2 class="section-title" data-i18n="sec04">OPEN SOURCE</h2>
   </div>
   <div class="portfolio-grid">
+    <a class="project-card featured fade-in" href="https://github.com/cluttazi/data-engineering" target="_blank">
+      <div class="project-tag">Featured · Spark · Databricks · Data Vault 2.0</div>
+      <div class="project-title">Data Engineering</div>
+      <div class="project-desc">A growing collection of production-style data engineering work: Spark pipelines, lakehouse and Medallion patterns, Data Vault 2.0 modelling, and AI-ready data tooling.</div>
+      <div class="project-link" data-i18n="proj_view">View on GitHub</div>
+    </a>
     <a class="project-card fade-in" href="https://github.com/cluttazi/spark-etl" target="_blank">
       <div class="project-tag">Apache Spark · Python</div>
       <div class="project-title">Spark ETL</div>
